@@ -1,0 +1,33 @@
+
+.option_selector{
+    width: 11vw;
+    min-width: 80px;
+    border-radius: 5px;
+    font-size: clamp(12px, 1.2vw, 38px);
+}
+.option_selector:focus{
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 500px) {
+    .position_set_sort{
+        flex-direction: column;
+    }
+}
+.position_set_sort{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.selector_name{
+    margin-top: 10px;
+    border: none;
+    margin-right: 0;
+    outline: none;
+    width: 10vw;
+    min-width: 80px;
+    font-size: clamp(12px, 1.5vw, 38px);
+    color: #e2e5ea;
+}

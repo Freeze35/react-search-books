@@ -1,0 +1,78 @@
+
+.search_container{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-image: url("../../assets/images/open_book.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 200px;
+    width:100%;
+
+}
+.position_set{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.row_search_book:hover{
+    box-shadow:  0 0 4px #007afe;
+}
+.input_search{
+    min-height: 40px;
+    height: 8vh;
+    width: 25vw;
+    min-width: 60px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    transition: 0.25s;
+    font-size: clamp(10px, 1.3vw, 38px);
+    padding-left: 10px;
+}
+
+.input_search:hover {
+    outline: none;
+    font-size: clamp(12px, 1.7vw, 38px);
+}
+
+.input_search:focus{
+    outline: none;
+}
+
+.button_search{
+    min-height: 40px;
+    border: none;
+    height: 8vh;
+    width: 5vw;
+    background: white;
+    min-width: 40px;
+    font-size:clamp(10px, 2.4vw, 34px);
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+}
+.button_search:hover{
+    font-size: clamp(20px, 3.4vw, 38px);
+    color: #2d7bed;
+    cursor: pointer;
+}
+
+#row_search:hover #input_search {
+    box-shadow:  0 0 4px #007afe;
+}
+
+#row_search:hover #button_search {
+    box-shadow:  2px 0 3px #007afe;
+    color: #2d7bed;
+}
+
+.row_h1{
+    font-size: clamp(10px, 3vw, 48px);
+    color:white;
+}
+

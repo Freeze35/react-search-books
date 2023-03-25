@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.0.9.5">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/const.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/open_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/loader/Loader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/loader/Loader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/selector/BooksSelector.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/sortComponent/OptionSelector.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/types/types.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/view/CenterView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/declare.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/BookPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/BooksListPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes/AppRouter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-for-books.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2NJQ9ZWbRY5vOLhnWDRhBZCrIMs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/T/online-store/search-for-books/client/src/components/searchComponent&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books\client\src\components\searchComponent" />
+      <recent name="D:\T\online-store\search-for-books\client\src\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books\client\src\components\booksComponent\BooksList" />
+      <recent name="D:\T\online-store\search-for-books\client\src\routes" />
+      <recent name="D:\T\online-store\search-for-books\client\src\assets" />
+      <recent name="D:\T\online-store\search-for-books\client\src" />
+      <recent name="D:\T\online-store\search-for-books\assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="" />
+      <created>1679379555806</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679379555806</updated>
+      <workItem from="1679379557644" duration="60240000" />
+      <workItem from="1679481561644" duration="111193000" />
+      <workItem from="1679667256918" duration="20139000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/client/src/index.d.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
