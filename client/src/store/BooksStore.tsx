@@ -1,11 +1,16 @@
 import {makeAutoObservable} from "mobx";
 import React from "react";
 
+interface BooksInterface{
+    items?:any[]
+    kind?:""
+    totalItems?:""
+}
 
 export default class BooksStore {
 
     private _isLoading: boolean = false;
-    private _books: any[] = []
+    private _books: BooksInterface = {}
     private _optionRelevance: string = "relevance"
     private _searchQuery: string = ""
     private _subjectCategory: string = ""
@@ -23,8 +28,12 @@ export default class BooksStore {
         return this._isLoading
     }
 
-    setBooks = (books: []) => {
+    setBooks = (books: {}) => {
         this._books = books
+    }
+
+    setBookChangeList = (books: BooksInterface) => {
+        this._books.items = books.items
     }
 
     get books() {

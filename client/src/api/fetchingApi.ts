@@ -8,7 +8,7 @@ export const fetchBooks= async (searchQuery:string, booksStore: BooksStore,
                                 maxResults = "10",startIndex="0")=>{
 
     try {
-        booksStore.setBooks([])
+        booksStore.setBooks({})
         booksStore.setIsLoading(true)
 
         //set Order by, default:relevance
@@ -27,13 +27,10 @@ export const fetchBooks= async (searchQuery:string, booksStore: BooksStore,
         //set startIndex
         let startIndexApi = `&startIndex=${startIndex}`
 
-
-
         let response = await axios.get(
             `https://www.googleapis.com/books/v1/volumes?q=
             ${searchQuery}${setCategory()}${orderByApi}${maxResultsApi}${startIndexApi}&key=${GOOGLE_KEY}`)
         booksStore.setBooks(response.data)
-        console.log(response.data.items)
         booksStore.setIsLoading(false)
     } catch (e) {
         console.log(e)
@@ -67,8 +64,12 @@ export const fetchAddingBooks = async (searchQuery:string, booksStore: BooksStor
         let response = await axios.get(
             `https://www.googleapis.com/books/v1/volumes?q=
             ${searchQuery}${setCategory()}${orderByApi}${maxResultsApi}${startIndexApi}&key=${GOOGLE_KEY}`)
-        //booksStore.setBooks(response.data)
-        console.log(response.data)
+
+        response.data.items =  [...<[]>booksStore.books.items, ...response.data.items]
+        booksStore.setBookChangeList(response.data)
+
+        //change to number(STartIndex and maxResults) our Start Index and set new Index
+        booksStore.setStartIndexFetchApi(`${Number(booksStore.startIndexFetchApi) + Number(maxResults)}`)
         booksStore.setIsLoading(false)
     } catch (e) {
         console.log(e)

@@ -33,6 +33,7 @@
 
 .book_image {
     align-self: center;
+
     box-shadow: 0 0 5px #040217;
     margin: 15px 0 15px;
     width: 13vw;
@@ -58,7 +59,7 @@
 
 .load_more{
     justify-content: center;
-    padding: 2vw 3vw 0;
+    padding: 2vw 4vw 0;
     text-align: center;
     position: relative;
     height: 16vw;
@@ -66,7 +67,9 @@
 
 .load_more_box{
     color: #e2e5ea;
-    padding-top: calc(10px + 3vh);
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 3.75vw;
     box-shadow: inset 0 0 5px #040217;
     margin: 0 0 2vw;
     border-radius: 12vw;
@@ -74,8 +77,4 @@
     background: rgb(72, 175, 96);
     width: 100vw;
     cursor: pointer;
-}
-
-.margin_loader{
-    margin-left:50%
 }
