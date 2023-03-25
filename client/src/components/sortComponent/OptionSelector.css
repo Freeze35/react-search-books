@@ -4,6 +4,8 @@
     min-width: 80px;
     border-radius: 5px;
     font-size: clamp(12px, 1.2vw, 38px);
+    margin: 0;
+    padding: 0;
 }
 .option_selector:focus{
     outline: none;
@@ -24,7 +26,7 @@
 .selector_name{
     margin-top: 10px;
     border: none;
-    margin-right: 0;
+    padding-left: 2.8vw;
     outline: none;
     width: 10vw;
     min-width: 80px;

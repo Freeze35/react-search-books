@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const CenterView =()=>{
-    document.getElementById("loader")!.scrollIntoView({block: "nearest", behavior: "smooth"})
+    document.getElementById("books_list")!.scrollIntoView({block: "nearest", behavior: "smooth"})
 }

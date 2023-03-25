@@ -1,51 +1,39 @@
 import React from 'react';
 import "./BooksComponents.css"
 import {Card, Col} from "react-bootstrap";
+import {fetchOneBook} from "../../api/fetchingApi";
+import BooksStore from "../../store/BooksStore";
+import {TakeDataBookComponent} from "./TakeDataBookComponent";
+
+
 
 interface BookInterface {
     book: any
+    navigate:any
+    booksStore:BooksStore
 }
 
-const BookItem = ({book}: BookInterface) => {
+const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
 
-    //switch on our request (imageBook,category,NameOfBook,Author)
-    //checking exists category's or not
-    const takeDataBook = (typeValue: string) => {
-
-        switch (typeValue) {
-
-            case "imageBook":
-                return book.volumeInfo?.imageLinks?.thumbnail !== undefined
-                    ? book.volumeInfo.imageLinks.thumbnail
-                    : book.volumeInfo?.imageLinks?.smallThumbnail !== undefined
-                        ? book.volumeInfo.imageLinks.smallThumbnail
-                        : ""
-
-            case "category":
-                //check if our category exists and then remove another category separated(split) by regexp "., -"
-                return book.volumeInfo?.categories !== undefined
-                    ? book.volumeInfo.categories[0].split(/[.,\/ -]/)[0]
-                    : ""
-
-            case "title":
-                return book.volumeInfo?.title !== undefined
-                    ? book.volumeInfo.title
-                    : ""
-
-            case "authors":
-                return book.volumeInfo?.authors !== undefined
-                    ? book.volumeInfo.authors.map((author:string)=>author).join(", ")
-                    : ""
-        }
+    //fetch one book by id and move to BookPage
+    const getBookData=(id:string,navigate:any) =>{
+        fetchOneBook(id)
+            .then(res => {
+                    booksStore.setOneBookData(res)
+                    navigate(`/page/${book.id}`)
+                }
+            )
     }
 
     return (
-        <Col md={3} className="d-flex">
-            <Card className="container_books" onClick={()=>console.log(`ds`)}>
-                <img className="book_image" src={takeDataBook("imageBook")} alt={""}></img>
-                <h2 className="text_decoration category">{takeDataBook("category")}</h2>
-                <h1 className="text_decoration name_book"> {takeDataBook("title")}</h1>
-                <p className="text_decoration">{takeDataBook("authors")}</p>
+        <Col md={3} className="d-flex" onClick={()=> {
+            getBookData(book.id,navigate)
+        }}>
+            <Card className="container_books">
+                <img className="book_image" src={TakeDataBookComponent("imageBook",book)} alt={""}></img>
+                <h2 className="text_decoration category">{TakeDataBookComponent("category",book)}</h2>
+                <h1 className="text_decoration name_book"> {TakeDataBookComponent("title",book)}</h1>
+                <p className="text_decoration">{TakeDataBookComponent("authors",book)}</p>
             </Card>
 
         </Col>

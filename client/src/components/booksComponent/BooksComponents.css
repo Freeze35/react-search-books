@@ -18,6 +18,13 @@
     min-width: 180px;
     box-shadow: 0 0 4px #040217;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.container_books:hover {
+    background: #ddffe5;
+    cursor: pointer;
+    size: 200px;
 }
 
 .books_list {
@@ -33,15 +40,15 @@
 
 .book_image {
     align-self: center;
-
     box-shadow: 0 0 5px #040217;
     margin: 15px 0 15px;
-    width: 13vw;
+    width: clamp(50px, 16vw, 230px);
+    height: clamp(50px, 18vw, 180px);
+    border-radius: 20px;
 }
 
 .text_decoration {
     position: relative;
-    margin: 5px;
     font-size: clamp(10px, 1.3vw, 38px);
     color: gray;
     text-align: start;
@@ -53,6 +60,7 @@
 }
 
 .name_book {
+    margin-top: 3%;
     font-size: clamp(10px, 1.8vw, 38px);
     color: #040217;
 }

@@ -15,6 +15,7 @@ export default class BooksStore {
     private _searchQuery: string = ""
     private _subjectCategory: string = ""
     private _startIndexFetchApi:string = "10"
+    private _oneBookData: BooksInterface = {}
 
     constructor() {
         makeAutoObservable(this)
@@ -38,6 +39,15 @@ export default class BooksStore {
 
     get books() {
         return this._books
+
+    }
+
+    setOneBookData = (books: {}) => {
+        this._oneBookData = books
+    }
+
+    get oneBookData() {
+        return this._oneBookData
 
     }
 

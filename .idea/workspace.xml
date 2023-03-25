@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.0.9.5 LoadMore and PageInfo in working">
+    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.0.9.8 LoadMore ready =&gt; PageInfo in working">
+      <change afterPath="$PROJECT_DIR$/client/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/magnifying-glass-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/open_book.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/TakeDataBookComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/open_book.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/open_book.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/loader/Loader.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/loader/Loader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/loader/Loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/loader/Loader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sortComponent/OptionSelector.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sortComponent/OptionSelector.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/view/CenterView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/view/CenterView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes/AppRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/AppRouter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +63,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/T/online-store/search-for-books/client/src/components/searchComponent&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/T/online-store/search-for-books/client/src/assets/images&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib&quot;,
@@ -51,15 +72,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books\client\src\assets\images" />
       <recent name="D:\T\online-store\search-for-books\client\src\components\searchComponent" />
       <recent name="D:\T\online-store\search-for-books\client\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books\client\src\assets\images" />
+      <recent name="D:\T\online-store\search-for-books\client" />
+      <recent name="D:\T\online-store\search-for-books\client\src\pages\BookPage" />
       <recent name="D:\T\online-store\search-for-books" />
       <recent name="D:\T\online-store\search-for-books\client\src\components\booksComponent\BooksList" />
-      <recent name="D:\T\online-store\search-for-books\client\src\routes" />
-      <recent name="D:\T\online-store\search-for-books\client\src\assets" />
-      <recent name="D:\T\online-store\search-for-books\client\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,7 +111,8 @@
       <updated>1679379555806</updated>
       <workItem from="1679379557644" duration="60240000" />
       <workItem from="1679481561644" duration="111193000" />
-      <workItem from="1679667256918" duration="27686000" />
+      <workItem from="1679667256918" duration="66263000" />
+      <workItem from="1679764879098" duration="5382000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -119,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679715691213</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="V.0.9.8 LoadMore ready =&gt; PageInfo in working">
+      <created>1679722017198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679722017198</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +174,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V.0.9.5 work LoadMore and PageInfo" />
     <MESSAGE value="V.0.9.5 LoadMore and PageInfo in working" />
-    <option name="LAST_COMMIT_MESSAGE" value="V.0.9.5 LoadMore and PageInfo in working" />
+    <MESSAGE value="V.0.9.8 LoadMore ready =&gt; PageInfo in working" />
+    <option name="LAST_COMMIT_MESSAGE" value="V.0.9.8 LoadMore ready =&gt; PageInfo in working" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

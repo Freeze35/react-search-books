@@ -1,21 +1,22 @@
 import React, {useContext} from 'react';
-
 import "./SearchAndSort.css"
 import {observer} from "mobx-react-lite";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import {Row} from "react-bootstrap";
 import {Context} from "../../index";
 import {fetchBooks} from "../../api/fetchingApi";
 import SortComponent from "../sortComponent/SortComponent";
 import {CenterView} from "../view/CenterView";
+import {useNavigate} from "react-router-dom";
+import {ReactComponent as SearchLoop} from '../../assets/images/magnifying-glass-solid.svg';
 
-const SearchAndSort = observer(() => {
+const SearchAndSort:React.FC = observer(() => {
 
     const {booksStore} = useContext(Context)
+    const navigate = useNavigate()
 
     const SetDataButton = () => {
         if (booksStore.searchQuery) {
+            navigate(`/booklist`)
             fetchBooks(booksStore.searchQuery, booksStore,
                 booksStore.optionRelevance,booksStore.subjectCategory).then(()=>
                 CenterView()
@@ -26,6 +27,7 @@ const SearchAndSort = observer(() => {
 
     const SetDataEnter = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === "Enter" && booksStore.searchQuery) {
+            navigate(`/booklist`)
             fetchBooks(booksStore.searchQuery, booksStore,
                 booksStore.optionRelevance,booksStore.subjectCategory).then(()=>
                 CenterView()
@@ -46,7 +48,7 @@ const SearchAndSort = observer(() => {
                 ></input>
                 <button id="button_search" className="position_set button_search"
                         onClick={() => SetDataButton()}>
-                    <FontAwesomeIcon icon={faMagnifyingGlass}/></button>
+                    <SearchLoop className="search_loop"/></button>
             </Row>
             <SortComponent/>
         </div>

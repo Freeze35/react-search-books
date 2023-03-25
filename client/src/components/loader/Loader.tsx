@@ -8,7 +8,7 @@ interface LoaderInterface{
 
 const Loader:React.FC<LoaderInterface> = ({visible}) => {
     return (
-        <div className={`loader`} id="loader">
+        <div className={`loader`}>
             <Oval
                 height={window.innerHeight/6}
                 width={window.innerWidth/6}
