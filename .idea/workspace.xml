@@ -1,48 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.0.9.5">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/const.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/open_book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/loader/Loader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/loader/Loader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/selector/BooksSelector.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/sortComponent/OptionSelector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/types/types.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/view/CenterView.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/declare.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/BookPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/BooksListPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routes/AppRouter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routes/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-for-books.iml" afterDir="false" />
+    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.0.9.5 work LoadMore and PageInfo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/loader/Loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/loader/Loader.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +88,16 @@
       <updated>1679379555806</updated>
       <workItem from="1679379557644" duration="60240000" />
       <workItem from="1679481561644" duration="111193000" />
-      <workItem from="1679667256918" duration="20139000" />
+      <workItem from="1679667256918" duration="20809000" />
     </task>
+    <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
+      <created>1679714457780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679714457780</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +118,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="V.0.9.5 work LoadMore and PageInfo" />
+    <option name="LAST_COMMIT_MESSAGE" value="V.0.9.5 work LoadMore and PageInfo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

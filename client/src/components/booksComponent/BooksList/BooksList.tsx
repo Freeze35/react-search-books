@@ -28,10 +28,10 @@ const BooksList: React.FC<ContainerProps> = observer(() => {
                         <BookItem book={book} key={book.id}/>)
                 })}
             </Row>
-            {booksStore.isLoading
-                ? <Loader visible={true} className=""/>
-                : <Loader visible={false} className=""/>}
         </Col>
+            {booksStore.isLoading && !checkTotalItems()
+                ? <Loader visible={true}/>
+                : ""}
             {booksStore.isLoading
                 ?<LoadMore className="booksList_background" hidden={true} checkTotalItems={checkTotalItems()} booksStore={booksStore}/>
                 :<LoadMore className="booksList_background" hidden={false} checkTotalItems={checkTotalItems()} booksStore={booksStore}/>}

@@ -75,3 +75,7 @@
     width: 100vw;
     cursor: pointer;
 }
+
+.margin_loader{
+    margin-left:50%
+}

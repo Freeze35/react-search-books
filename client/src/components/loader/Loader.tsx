@@ -4,7 +4,6 @@ import "./Loader.css"
 
 interface LoaderInterface{
     visible:boolean | undefined
-    className?:string
 }
 
 const Loader:React.FC<LoaderInterface> = ({visible}) => {
