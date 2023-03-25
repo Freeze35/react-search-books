@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.0.9.5 LoadMore and PageInfo in working" />
+    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.0.9.5 LoadMore and PageInfo in working">
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,11 +50,11 @@
       <recent name="D:\T\online-store\search-for-books\client\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books" />
       <recent name="D:\T\online-store\search-for-books\client\src\components\booksComponent\BooksList" />
       <recent name="D:\T\online-store\search-for-books\client\src\routes" />
       <recent name="D:\T\online-store\search-for-books\client\src\assets" />
       <recent name="D:\T\online-store\search-for-books\client\src" />
-      <recent name="D:\T\online-store\search-for-books\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,7 +84,7 @@
       <updated>1679379555806</updated>
       <workItem from="1679379557644" duration="60240000" />
       <workItem from="1679481561644" duration="111193000" />
-      <workItem from="1679667256918" duration="21185000" />
+      <workItem from="1679667256918" duration="21565000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -98,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679715253368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="V.0.9.5 LoadMore and PageInfo in working">
+      <created>1679715522081</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679715522081</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
