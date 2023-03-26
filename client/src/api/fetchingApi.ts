@@ -14,17 +14,14 @@ export const fetchBooks= async (searchQuery:string, booksStore: BooksStore,
 
         //set Order by, default:relevance
         let orderByApi:string = `&orderBy=${orderBy}`
-
         //set Category type
         const setCategory=():string=>{
             return subjectCategory
                 ? `+subject:${subjectCategory}`
                 : "";
         }
-
         //set maxResults
         let maxResultsApi = `&maxResults=${maxResults}`
-
         //set startIndex
         let startIndexApi = `&startIndex=${startIndex}`
 
@@ -49,17 +46,14 @@ export const fetchAddingBooks = async (searchQuery:string, booksStore: BooksStor
 
         //set Order by, default:relevance
         let orderByApi:string = `&orderBy=${orderBy}`
-
         //set Category type
         const setCategory=():string=>{
             return subjectCategory
                 ? `+subject:${subjectCategory}`
                 : "";
         }
-
         //set maxResults
         let maxResultsApi = `&maxResults=${maxResults}`
-
         //set startIndex
         let startIndexApi = `&startIndex=${startIndex}`
 
