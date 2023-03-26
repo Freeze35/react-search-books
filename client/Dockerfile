@@ -1,8 +1,8 @@
-FROM node:latest
+FROM node:alpine
 
-WORKDIR /app
+WORKDIR /client
 
-EXPOSE 3000
+ENV PATH="./node_modules/.bin:$PATH"
 
 COPY package*.json ./
 
@@ -10,4 +10,6 @@ RUN npm install
 
 COPY . .
 
-CMD ["npm","run","start"]
+RUN npm run build
+
+CMD ["npm","start"]

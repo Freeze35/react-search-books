@@ -27,7 +27,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker-compose_up": "docker-compose up",
+    "buildDocker": "docker build --tag search-for-books .",
+    "dockerServer": "docker run --publish 3000:3000 search-for-books"
   },
   "eslintConfig": {
     "extends": [
@@ -46,8 +49,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/dotenv-webpack": "^7.0.3"
   }
 }

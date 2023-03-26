@@ -13,7 +13,7 @@ const AppRouter = () => {
         if (!booksStore.oneBookData.id){
             return navigate("/booklist");
         }
-    },[booksStore.books]);
+    },[booksStore.books,booksStore.oneBookData.id,navigate]);
 
     return (
         <Routes>

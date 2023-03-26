@@ -26,6 +26,7 @@
     position: relative;
     box-shadow: 4px 0 15px #545454;
     width: clamp(50px, 45%, 600px);
+    max-height: 400px;
 }
 
 .text_decoration_page {

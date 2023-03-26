@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "react-client": "npm run start --prefix client",
+    "docker-compose": "npm run docker-compose_up --prefix client",
+    "buildReact": "npm run docker-compose_up --prefix client",
+    "buildDocker":"npm run buildDocker --prefix client",
+    "dockerServer":"npm run dockerServer --prefix client"
+  }
+  ,
   "keywords": [],
   "author": "",
   "license": "ISC",

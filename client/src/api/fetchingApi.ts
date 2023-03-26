@@ -68,7 +68,7 @@ export const fetchAddingBooks = async (searchQuery:string, booksStore: BooksStor
             ${searchQuery}${setCategory()}${orderByApi}${maxResultsApi}${startIndexApi}&key=${GOOGLE_KEY}`)
 
         //spread old list and add new list then push new data to Store. Mobx set new Proxy for elements
-        response.data.items =  [...<[]>booksStore.books.items, ...response.data.items]
+        response.data.items =  [...booksStore.books.items as [], ...response.data.items]
         booksStore.setBookChangeList(response.data)
 
         //change to number(STartIndex and maxResults) our Start Index and set new Index
