@@ -5,8 +5,6 @@ import {fetchOneBook} from "../../api/fetchingApi";
 import BooksStore from "../../store/BooksStore";
 import {TakeDataBookComponent} from "./TakeDataBookComponent";
 
-
-
 interface BookInterface {
     book: any
     navigate:any
@@ -25,12 +23,17 @@ const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
             )
     }
 
+
+
     return (
         <Col md={3} className="d-flex" onClick={()=> {
             getBookData(book.id,navigate)
         }}>
             <Card className="container_books">
-                <img className="book_image" src={TakeDataBookComponent("imageBook",book)} alt={""}></img>
+                <img className="book_image"
+                     src={TakeDataBookComponent("imageBook",book)}
+                     alt={""}
+                ></img>
                 <h2 className="text_decoration category">{TakeDataBookComponent("category",book)}</h2>
                 <h1 className="text_decoration name_book"> {TakeDataBookComponent("title",book)}</h1>
                 <p className="text_decoration">{TakeDataBookComponent("authors",book)}</p>

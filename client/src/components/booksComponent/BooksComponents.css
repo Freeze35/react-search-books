@@ -24,7 +24,6 @@
 .container_books:hover {
     background: #ddffe5;
     cursor: pointer;
-    size: 200px;
 }
 
 .books_list {
@@ -40,11 +39,9 @@
 
 .book_image {
     align-self: center;
-    box-shadow: 0 0 5px #040217;
     margin: 15px 0 15px;
-    width: clamp(50px, 16vw, 230px);
+    box-shadow: 0 0 4px #040217;
     height: clamp(50px, 18vw, 180px);
-    border-radius: 20px;
 }
 
 .text_decoration {

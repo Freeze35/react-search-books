@@ -23,7 +23,6 @@ const fetchVariables = (booksStore: BooksStore, maxResults: string, startIndex: 
             console.log(Number(booksStore.books.totalItems) - Number(startIndex))
             return maxResults = `${Number(booksStore.books.totalItems) - Number(startIndex)}`
         } else {
-            console.log(maxResults)
             return maxResults
         }
     }
@@ -53,7 +52,6 @@ const setLineRequestAndGetData = async (searchQuery: string, booksStore: BooksSt
     const fetchVars = fetchVariables(booksStore, maxResults, startIndex, subjectCategory, orderBy)
 
     //Return our response => on out change data(response.data) //(use +`${}` for better reading)
-    console.log(fetchVars.startIndexApi)
     return await axios.get(
         `https://www.googleapis.com/books/v1/volumes?q=`
         + `${searchQuery}`

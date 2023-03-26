@@ -40,11 +40,11 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
                         : ""}
                     <p hidden={hidden} className="load_more_text">
                         Load more books<br/>
-                       Remaining unloaded books: {
-                        unloaded>=0?
-                        Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)
-                        :0
-                    }
+                        {
+                        unloaded>=0
+                            ? `Remaining unloaded books: ${Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)}`
+                            : `No more books`
+                        }
                     </p>
 
                 </Row>

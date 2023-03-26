@@ -28,7 +28,6 @@ export const TakeDataBookComponent = (typeValue: string, book: any) => {
                 : ""
 
         case "category_all":
-            //check if our category exists and then remove another category separated(split) by regexp "., -"
             return book.volumeInfo?.categories !== undefined
                 ? book.volumeInfo.categories[0]
                 : ""
@@ -44,7 +43,6 @@ export const TakeDataBookComponent = (typeValue: string, book: any) => {
                 : ""
 
         //change our decoding text \u003cp\u003e to tage and return parsing text
-
         case "description":
             if (book.volumeInfo?.description !== undefined) {
                 let parser = new DOMParser()
