@@ -19,7 +19,7 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
         return fetchAddingBooks(booksStore.searchQuery, booksStore,
             booksStore.optionRelevance, booksStore.subjectCategory, "15", booksStore.startIndexFetchApi)
     }
-    //Load by 15 books request 2 time
+    //Load by 15 books request 2 time = 30 books in full request
     //it's this will speed up the rendering of elements but Google API limit 1000 per day
     const loadMoreBooks = () => {
         chunkRequest15().then(() => {
