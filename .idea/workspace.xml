@@ -3,8 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.1.0.0 =&gt; Docker adding in up package.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/view/CenterView.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +149,7 @@
       <workItem from="1679667256918" duration="66263000" />
       <workItem from="1679764879098" duration="5382000" />
       <workItem from="1679771652194" duration="27162000" />
-      <workItem from="1679826414406" duration="2166000" />
+      <workItem from="1679826414406" duration="29295000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -183,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679793723068</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="V.1.0.0 =&gt; Docker adding in up package.json">
+      <created>1679828700609</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679828700610</updated>
+    </task>
+    <task id="LOCAL-00008" summary="V.1.0.0 =&gt; Docker adding in up package.json">
+      <created>1679828745352</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679828745352</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

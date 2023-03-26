@@ -3,9 +3,9 @@ import "./SearchAndSort.css"
 import {observer} from "mobx-react-lite";
 import {Row} from "react-bootstrap";
 import {Context} from "../../index";
-import {fetchBooks} from "../../api/fetchingApi";
+import {fetchBooksFirstTime} from "../../api/fetchingApi";
 import SortComponent from "../sortComponent/SortComponent";
-import {CenterView} from "../view/CenterView";
+
 import {useNavigate} from "react-router-dom";
 import {ReactComponent as SearchLoop} from '../../assets/images/magnifying-glass-solid.svg';
 
@@ -17,10 +17,8 @@ const SearchAndSort:React.FC = observer(() => {
     const SetDataButton = () => {
         if (booksStore.searchQuery) {
             navigate(`/booklist`)
-            fetchBooks(booksStore.searchQuery, booksStore,
-                booksStore.optionRelevance,booksStore.subjectCategory).then(()=>
-                CenterView()
-            )
+            fetchBooksFirstTime(booksStore.searchQuery, booksStore,
+                booksStore.optionRelevance,booksStore.subjectCategory).then()
         }
     }
 
@@ -28,10 +26,8 @@ const SearchAndSort:React.FC = observer(() => {
     const SetDataEnter = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === "Enter" && booksStore.searchQuery) {
             navigate(`/booklist`)
-            fetchBooks(booksStore.searchQuery, booksStore,
-                booksStore.optionRelevance,booksStore.subjectCategory).then(()=>
-                CenterView()
-            )
+            fetchBooksFirstTime(booksStore.searchQuery, booksStore,
+                booksStore.optionRelevance,booksStore.subjectCategory).then()
         }
     }
 
@@ -48,7 +44,7 @@ const SearchAndSort:React.FC = observer(() => {
                 ></input>
                 <button id="button_search" className="position_set button_search"
                         onClick={() => SetDataButton()}>
-                    <SearchLoop className="search_loop"/></button>
+                    <SearchLoop id="search_loop" className="search_loop"/></button>
             </Row>
             <SortComponent/>
         </div>

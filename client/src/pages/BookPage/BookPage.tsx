@@ -15,8 +15,8 @@ const BookPage = () => {
 
 
     return (
-        <div className="book_container">
-            <div style={{display: "flex"}}>
+
+            <div className="book_container">
                 <div>
                     <div className="image_back">
                         <img className="book_image_page"
@@ -38,7 +38,7 @@ const BookPage = () => {
                 >asdaasd
                 </div>*/}
             </div>
-        </div>
+
     );
 };
 

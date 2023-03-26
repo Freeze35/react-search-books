@@ -5,7 +5,7 @@ import "./OptionSelector.css"
 import {OptionsDataInterface} from "../types/types";
 import {observer} from "mobx-react-lite";
 import {Context} from "../../index";
-import {fetchBooks} from "../../api/fetchingApi";
+import {fetchBooksFirstTime} from "../../api/fetchingApi";
 
 
 const SortComponent: React.FC<ContainerProps> = observer(() => {
@@ -33,7 +33,7 @@ const SortComponent: React.FC<ContainerProps> = observer(() => {
     const sortData = (sortType: string) => {
         if (booksStore.searchQuery) {
             booksStore.setOptionRelevance(sortType)
-            fetchBooks(booksStore.searchQuery, booksStore, sortType, booksStore.subjectCategory).then()
+            fetchBooksFirstTime(booksStore.searchQuery, booksStore, sortType, booksStore.subjectCategory).then()
         } else {
             booksStore.setOptionRelevance(sortType)
         }
@@ -42,7 +42,7 @@ const SortComponent: React.FC<ContainerProps> = observer(() => {
     const categorySelector = (category: string) => {
         if (booksStore.searchQuery) {
             booksStore.setSubjectCategory(category)
-            fetchBooks(booksStore.searchQuery, booksStore, booksStore.optionRelevance, category).then()
+            fetchBooksFirstTime(booksStore.searchQuery, booksStore, booksStore.optionRelevance, category).then()
         } else {
             booksStore.setSubjectCategory(category)
         }

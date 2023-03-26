@@ -2,7 +2,6 @@ import React from 'react';
 import {Row} from "react-bootstrap";
 import BooksStore from "../../../store/BooksStore";
 import {fetchAddingBooks} from "../../../api/fetchingApi";
-import {CenterView} from "../../view/CenterView";
 import Loader from "../../loader/Loader";
 
 interface LoadMoreInterface {
@@ -24,21 +23,30 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
     const loadMoreBooks = () => {
         chunkRequest15().then(() => {
             chunkRequest15().then(() => {
-                CenterView()
                 hidden = false
             })
         })
 
     }
+    //text number of unloaded books
+    let unloaded = Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)
 
     return (
         <div>
             {checkTotalItems ?
-                <Row className={`load_more ${className}`} onClick={() => loadMoreBooks()}>
+                <Row className={`load_more_button ${className}`} onClick={() => loadMoreBooks()}>
                     {booksStore.isLoading
                         ? <Loader visible={true}/>
                         : ""}
-                    <div hidden={hidden} className="load_more_box">Load more books</div>
+                    <p hidden={hidden} className="load_more_text">
+                        Load more books<br/>
+                       Remaining unloaded books: {
+                        unloaded>=0?
+                        Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)
+                        :0
+                    }
+                    </p>
+
                 </Row>
                 : ""
             }
