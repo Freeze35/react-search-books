@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.1.0.0 =&gt; Docker fixes + small css styling">
-      <change afterPath="$PROJECT_DIR$/client/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/tests/App.test.tsx" afterDir="false" />
+    <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +63,7 @@
       <recent name="D:\T\online-store\search-for-books\client\src\pages\BookPage" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dockerServer">
+  <component name="RunManager" selected="npm.docker-compose">
     <configuration name="build-docker-prod-nginx" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -124,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.docker-compose" />
         <item itemvalue="npm.dockerServer" />
         <item itemvalue="npm.build-docker-prod-nginx" />
         <item itemvalue="npm.dockerServer2" />
         <item itemvalue="npm.build-docker" />
-        <item itemvalue="npm.docker-compose" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +138,7 @@
       <workItem from="1679764879098" duration="5382000" />
       <workItem from="1679771652194" duration="27162000" />
       <workItem from="1679826414406" duration="57826000" />
-      <workItem from="1679905117318" duration="17475000" />
+      <workItem from="1679905117318" duration="20426000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -218,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679864064475</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md">
+      <created>1679923065995</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679923065995</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +240,8 @@
     <MESSAGE value="V.0.9.8 LoadMore ready =&gt; PageInfo in working" />
     <MESSAGE value="V.1.0.0 =&gt; Docker adding in up package.json" />
     <MESSAGE value="V.1.0.0 =&gt; Docker fixes + small css styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="V.1.0.0 =&gt; Docker fixes + small css styling" />
+    <MESSAGE value="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

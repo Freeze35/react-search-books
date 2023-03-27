@@ -21,9 +21,15 @@
 
 Запуск нашего react-client в режиме разработки // Running our react-client in development mode  
 ### `npm run react-client`
-Build our App in development mode
+Создаём наше приложение в режиме разработки // Create our application in development mode
 ### `npm run build-react`
-Build our final in docker using image nginx => search-for-books:1.0.0-prod
+Собираем финальную версию в докере, используя образ nginx // Build the final version in docker using image nginx => search-for-books:1.0.0-prod
 ### `build-docker-prod-nginx`
-run on localhost our finalBuild image(search-for-books:1.0.0-prod)
+Запускаем на локальном хосте наш образ FinalBuild => image(search-for-books:1.0.0-prod)(требуется сборка build-docker-prod-nginx) // run on localhost our finalBuild image(search-for-books:1.0.0-prod)(requires build-docker-prod-nginx build)  
 ### `dockerServer`
+Компилируем полностью финальную сборку и запускаем сервер (docker-compose using)// We compile the complete final assembly and start the server(docker-compose using)
+### `docker-compose up`
+
+Очень рекомендую почитать статьи для Docker сборки // I highly recommend reading articles for Docker builds
+[Базовый DockerFile // Basic DockerFile](https://javascript.plainenglish.io/how-to-serve-a-react-app-with-nginx-in-a-non-root-docker-container-cbc4c6acc177)
+[Оптимизация nginx.config//nginx.config optimization](https://itnext.io/nginx-create-react-app-gzip-tripple-your-lighthouse-performance-score-in-5-minutes-627465c3f445)

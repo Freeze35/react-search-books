@@ -42,7 +42,7 @@ const SearchAndSort:React.FC = observer(() => {
                        type="text"
                        onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => SetDataEnter(e)}
                 ></input>
-                <button id="button_search" className="position_set button_search"
+                <button id="button_search" aria-label="Поиск..." className="position_set button_search"
                         onClick={() => SetDataButton()}>
                     <SearchLoop id="search_loop" className="search_loop"/></button>
             </Row>

@@ -3,10 +3,11 @@ services:
   client:
     build:
       context: ./client
-    container_name: client_search_books
+      dockerfile: Dockerfile
+    container_name: search-for-books
     ports:
-      - "3000:3000"
-    image: search-for-books
+      - "80:80"
+    image: search-for-books:1.0.0-prod
     volumes:
       - .:/client
     environment:
