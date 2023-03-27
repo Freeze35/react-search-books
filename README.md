@@ -28,7 +28,7 @@
 Запускаем на локальном хосте наш образ FinalBuild => image(search-for-books:1.0.0-prod)(требуется сборка build-docker-prod-nginx) // run on localhost our finalBuild image(search-for-books:1.0.0-prod)(requires build-docker-prod-nginx build)  
 ### `dockerServer`
 Компилируем полностью финальную сборку и запускаем сервер (docker-compose using 80:80 localhost:80)// We compile the complete final assembly and start the server(docker-compose using localhost:80)
-### `docker-compose up` [localhost:80](http://localhost:80)
+### `docker-compose up` [server_build localhost:80](http://localhost:80)
 
 Очень рекомендую почитать статьи для Docker сборки // I highly recommend reading articles for Docker builds
 [Базовый DockerFile // Basic DockerFile](https://javascript.plainenglish.io/how-to-serve-a-react-app-with-nginx-in-a-non-root-docker-container-cbc4c6acc177)  
