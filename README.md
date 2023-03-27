@@ -7,15 +7,15 @@
     При нажатии на выбранную книгу открывает полную информацию о данной книге; //  When you click on the selected book, it opens full information about this book;  
 
 ## Список технологий проекта: // List of project technologies:  
-* react - _JavaScript-библиотека для создания пользовательских интерфейсов // JavaScript library for creating user interfaces_  
-* typesript - _позволяет указать типы данных, передаваемых в коде, и имеет возможность сообщать об ошибках, когда типы не совпадают // allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match_  
-* axios - _для запроса на сервере используя Google Книг API // to query the server using the Google Books API_  
-* react-dom - _Для создания нашего виртульного DOM дерева // for creating virtual DOM_  
-* react-router-dom - _для перемещения между CentralPage и BookPage // for moving between CentralPage and BookPage_  
-* react-loader-spinner  - _для установки загрузчика в загрузке // for set loader in loading_  
-* react-bootstrap - _стилизуем наше прилложение // styling for app_  
-* mobx: - создает наше(наши) глобальное хранилище с действиемя и переменнымми  //create our(ours) Store for global action with action and variables  
-* mobx-react-lite - дает нам отслеживание изменений глобальных переменных (достаточно небольшой размер пакета) // gives an observer to monitor changes in global variables (package small size for using)
+* react - _JavaScript-библиотека для создания пользовательских интерфейсов_ // _JavaScript library for creating user interfaces_  
+* typesript - _позволяет указать типы данных, передаваемых в коде, и имеет возможность сообщать об ошибках, когда типы не совпадают_ // _allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match_  
+* axios - _для запроса на сервере используя Google Книг API_ // _to query the server using the Google Books API_  
+* react-dom - _Для создания нашего виртульного DOM дерева_ // _for creating virtual DOM_  
+* react-router-dom - _для перемещения между CentralPage и BookPage_ // _for moving between CentralPage and BookPage_  
+* react-loader-spinner  - _для установки загрузчика в загрузке_ // _for set loader in loading_  
+* react-bootstrap - _стилизуем наше прилложение_ // _styling for app_  
+* mobx: - _создает наше(наши) глобальное хранилище с действиемя и переменнымми_  //  _create our(ours) Store for global action with action and variables_  
+* mobx-react-lite - _дает нам отслеживание изменений глобальных переменных (достаточно небольшой размер пакета)_ // _gives an observer to monitor changes in global variables (package small size for using)_
 
 ## Список команд для запуска // List of commands to run
 
