@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.1.0.0 =&gt; Docker fixes + small css styling">
+      <change afterPath="$PROJECT_DIR$/client/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/tests/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/fetchingApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/TakeDataBookComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/TakeDataBookComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/BooksStore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/T/online-store/search-for-books/client/public&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/T/online-store/search-for-books/client/node_modules/react-scripts&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib&quot;,
@@ -57,26 +64,32 @@
       <recent name="D:\T\online-store\search-for-books\client\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\T\online-store\search-for-books\client\src\assets\images" />
-      <recent name="D:\T\online-store\search-for-books\client" />
-      <recent name="D:\T\online-store\search-for-books\client\src\pages\BookPage" />
       <recent name="D:\T\online-store\search-for-books" />
-      <recent name="D:\T\online-store\search-for-books\client\src\components\booksComponent\BooksList" />
+      <recent name="D:\T\online-store\search-for-books\client\src" />
+      <recent name="D:\T\online-store\search-for-books\client" />
+      <recent name="D:\T\online-store\search-for-books\client\src\assets\images" />
+      <recent name="D:\T\online-store\search-for-books\client\src\pages\BookPage" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.client.client: Compose Deployment">
-    <configuration name="client.client: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
-            <list>
-              <option value="client" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="client/docker-compose.yml" />
-        </settings>
-      </deployment>
+  <component name="RunManager" selected="npm.dockerServer">
+    <configuration name="build-docker-prod-nginx" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-docker-prod-nginx" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build-docker" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-docker" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="docker-compose" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -89,31 +102,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose_up" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="docker-compose_up" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="react-client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="dockerServer" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="react-client" />
+        <script value="dockerServer" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
+    <configuration name="dockerServer2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="dockerServer2" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -121,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.client.client: Compose Deployment" />
-        <item itemvalue="npm.react-client" />
+        <item itemvalue="npm.dockerServer" />
+        <item itemvalue="npm.build-docker-prod-nginx" />
+        <item itemvalue="npm.dockerServer2" />
+        <item itemvalue="npm.build-docker" />
         <item itemvalue="npm.docker-compose" />
-        <item itemvalue="npm.docker-compose_up" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +145,8 @@
       <workItem from="1679667256918" duration="66263000" />
       <workItem from="1679764879098" duration="5382000" />
       <workItem from="1679771652194" duration="27162000" />
-      <workItem from="1679826414406" duration="34113000" />
+      <workItem from="1679826414406" duration="57826000" />
+      <workItem from="1679905117318" duration="17475000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -207,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679858119344</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="V.1.0.0 =&gt; Docker fixes + small css styling">
+      <created>1679864064475</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679864064475</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

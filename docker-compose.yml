@@ -2,12 +2,12 @@ version: '3.8'
 services:
   client:
     build:
-      context: .
+      context: ./client
     container_name: client_search_books
     ports:
       - "3000:3000"
-    image: client:search_for_books
+    image: search-for-books
     volumes:
       - .:/client
-      - /client/node_module
-    command: npm start
+    environment:
+      - NODE_ENV=production

@@ -4,12 +4,12 @@
   "main": "index.js",
   "scripts": {
     "react-client": "npm run start --prefix client",
-    "docker-compose": "npm run docker-compose_up --prefix client",
-    "buildReact": "npm run docker-compose_up --prefix client",
-    "buildDocker":"npm run buildDocker --prefix client",
-    "dockerServer":"npm run dockerServer --prefix client"
-  }
-  ,
+    "build-react": "npm run build --prefix client",
+    "build-docker-prod-nginx": "docker build -f ./client/Dockerfile -t search-for-books:1.0.0-prod ./client",
+    "dockerServer": "docker run -p 3000:80 -t search-for-books:1.0.0-prod",
+    "docker-compose": "docker-compose up"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
