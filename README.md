@@ -1,8 +1,8 @@
 # Приложения для отображения списока Goggle Books // Applications to display a list of Goggle Books
     Включается в себя поиск определенным запросам; // Includes search for specific queries;  
-    совместный поиск с определенными категориями; // joint search with certain categories;  
-    сортировка по актуальности, новизне; // sorting by relevance, newest;  
-    поиск по категориям; // search by category;  
+    Совместный поиск с определенными категориями; // Joint search with certain categories;  
+    Сортировка по актуальности, новизне; // Sorting by relevance, newest;  
+    Поиск по категориям; // Search by category;  
     Пагинацию на запрос дополнительных книг в низу страницы; // Pagination to request additional books at the bottom of the page;  
     При нажатии на выбранную книгу открывает полную информацию о данной книге; //  When you click on the selected book, it opens full information about this book;  
 
