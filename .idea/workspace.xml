@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md">
+      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +44,7 @@
     &quot;last_opened_file_path&quot;: &quot;D:/T/online-store/search-for-books/client/public&quot;,
     &quot;nodejs.jest.jest_package&quot;: &quot;D:/T/online-store/search-for-books/client/node_modules/react-scripts&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -72,16 +75,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="build-docker" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build-docker" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -102,11 +95,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dockerServer2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="react-client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dockerServer2" />
+        <script value="react-client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -114,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docker-compose" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.react-client" />
         <item itemvalue="npm.dockerServer" />
+        <item itemvalue="npm.docker-compose" />
         <item itemvalue="npm.build-docker-prod-nginx" />
-        <item itemvalue="npm.dockerServer2" />
-        <item itemvalue="npm.build-docker" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +139,8 @@
       <workItem from="1679764879098" duration="5382000" />
       <workItem from="1679771652194" duration="27162000" />
       <workItem from="1679826414406" duration="57826000" />
-      <workItem from="1679905117318" duration="22145000" />
+      <workItem from="1679905117318" duration="25389000" />
+      <workItem from="1679932701152" duration="723000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -243,7 +247,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679927788834</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md">
+      <created>1679929407406</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679929407406</updated>
+    </task>
+    <task id="LOCAL-00017" summary="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md">
+      <created>1679929475214</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679929475214</updated>
+    </task>
+    <task id="LOCAL-00018" summary="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md">
+      <created>1679929567360</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679929567360</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

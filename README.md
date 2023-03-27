@@ -33,4 +33,5 @@
 
 Очень рекомендую почитать статьи для Docker сборки // I highly recommend reading articles for Docker builds
 [Базовый DockerFile // Basic DockerFile](https://javascript.plainenglish.io/how-to-serve-a-react-app-with-nginx-in-a-non-root-docker-container-cbc4c6acc177)  
-[Оптимизация nginx.config//nginx.config optimization](https://itnext.io/nginx-create-react-app-gzip-tripple-your-lighthouse-performance-score-in-5-minutes-627465c3f445)
+[Оптимизация nginx.config//nginx.config optimization](https://itnext.io/nginx-create-react-app-gzip-tripple-your-lighthouse-performance-score-in-5-minutes-627465c3f445)  
+[Docker Build: Containerizing](https://www.youtube.com/watch?v=8VHheCkw-7k&t=3304s)
