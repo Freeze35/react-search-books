@@ -42,7 +42,8 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
                         Load more books<br/>
                         {
                         unloaded>=0
-                            ? `Remaining unloaded books: ${Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)}`
+                            ? `Remaining unloaded books: 
+                            ${Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)}`
                             : `No more books`
                         }
                     </p>
