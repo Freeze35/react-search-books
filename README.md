@@ -1,4 +1,5 @@
 ## Список технологий проекта: // List of project technologies:  
+## react + typesript + mobx + docker(ngenx)
 * react - _JavaScript-библиотека для создания пользовательских интерфейсов_ // _JavaScript library for creating user interfaces_  
 * typesript - _позволяет указать типы данных, передаваемых в коде, и имеет возможность сообщать об ошибках, когда типы не совпадают_ // _allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match_  
 * axios - _для запроса на сервере используя Google Книг API_ // _to query the server using the Google Books API_  
