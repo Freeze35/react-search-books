@@ -21,8 +21,8 @@
 
 ## Список команд для запуска // List of commands to run
 
-### `docker-compose up` [server_build localhost:80](http://localhost:80)
-Компилируем полностью финальную сборку и запускаем сервер (docker-compose using 80:80 localhost:80)// We compile the complete final assembly and start the server(docker-compose using localhost:80)
+### `docker-compose up` [server_build localhost:3000](http://localhost:3000)
+Компилируем полностью финальную сборку и запускаем сервер (docker-compose using 3000:80 localhost:3000)// We compile the complete final assembly and start the server(docker-compose using localhost:3000)
 ### `npm run react-client`  
 Запуск нашего react-client в режиме разработки // Running our react-client in development mode
 ### `npm run build-react`  
