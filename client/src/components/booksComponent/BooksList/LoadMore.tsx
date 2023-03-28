@@ -47,7 +47,6 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
                             : `No more books`
                         }
                     </p>
-
                 </Row>
                 : ""
             }
