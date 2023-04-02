@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.1.0.1 =&gt; Add fonts adapting + tests in work + refactor README.md + bootstrap small refactoring">
-      <change afterPath="$PROJECT_DIR$/client/babel.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/jest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/ContextProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Rubik-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Rubik-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Rubik-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Rubik-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/open_book.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/sortComponent/optionsMassive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/fontface.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/tests/__mocks__/fileMock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/tests/app.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/tests/transformers/svgTransform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/client/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/LoadMore.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/declare.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/declare.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routes/AppRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/AppRouter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/tests/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Rubik-Regular.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +40,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
     "javascript.nodejs.core.library.typings.version": "18.15.11",
@@ -188,7 +154,7 @@
       <workItem from="1680101752384" duration="75598000" />
       <workItem from="1680251032724" duration="2422000" />
       <workItem from="1680253497123" duration="10120000" />
-      <workItem from="1680276731317" duration="38562000" />
+      <workItem from="1680276731317" duration="39350000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -344,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680074136937</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="V.1.0.1 =&gt; Add fonts adapting + tests in work + refactor README.md + bootstrap small refactoring">
+      <created>1680475552696</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1680475552696</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
