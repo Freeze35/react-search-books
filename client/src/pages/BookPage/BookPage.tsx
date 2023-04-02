@@ -1,27 +1,22 @@
-import React, {useContext} from 'react';
-
+import React, {Suspense, useContext} from 'react';
 import "./BookPage.css"
-import {Context} from "../../index";
 import {TakeDataBookComponent} from "../../components/booksComponent/TakeDataBookComponent";
+import {Context} from "../../ContextProvider";
 
 const BookPage = () => {
 
-
     const {booksStore} = useContext(Context)
-
-
-
-
-
 
     return (
 
             <div className="book_container">
                 <div>
                     <div className="image_back">
+                        <Suspense fallback={<div>asdwa</div>}>
                         <img className="book_image_page"
                              src={TakeDataBookComponent("imageBook", booksStore.oneBookData)}
                              alt={""}></img>
+                        </Suspense>
                     </div>
                 </div>
                 <div className="info_book_block">

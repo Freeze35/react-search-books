@@ -1,19 +1,13 @@
-import React, {createContext} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import BooksStore from "./store/BooksStore";
+import "./App.css"
+import ContextProvider from './ContextProvider';
 
-
-
-//Linking our store's using Context.Provider
-export const Context = createContext<null|any>(null)
-
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
-    <Context.Provider value={{
-        booksStore: new BooksStore()
-    }}>
+    <ContextProvider>
         <App />
-    </Context.Provider>
+    </ContextProvider>
 );

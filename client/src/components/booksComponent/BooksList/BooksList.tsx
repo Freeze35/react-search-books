@@ -2,26 +2,26 @@ import React, {useContext} from 'react';
 import {Col, ContainerProps, Row} from "react-bootstrap";
 import "../BooksComponents.css"
 import BookItem from "../BookItem";
-import {Context} from "../../../index";
 import {observer} from "mobx-react-lite";
 import Loader from "../../loader/Loader";
 import LoadMore from "./LoadMore";
 import {useNavigate} from "react-router-dom";
+import {Context} from "../../../ContextProvider";
 
 const BooksList: React.FC<ContainerProps> = observer(() => {
     const {booksStore} = useContext(Context)
     const navigate = useNavigate()
+    const totalItems = booksStore.books.totalItems
 
     let checkTotalItems = () => {
-        return booksStore?.books.totalItems !== undefined
-
+        return totalItems !== undefined
     }
 
     return (<>
         <Col className="booksList_background">
             <Row>
                 {checkTotalItems()
-                    ? <div className="founded" id="Found">Found {booksStore.books.totalItems} results</div>
+                    ? <div className="founded" id="Found">Found {totalItems} results</div>
                     : ""
                 }
             </Row>
