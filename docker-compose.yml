@@ -8,13 +8,16 @@ services:
     ports:
       - "3000:80"
 
+
     image: simple_google_search_books:1.0.0-prod
+
     volumes:
       - .:/client
     #  - etc-letsencrypt:/etc/letsencrypt
     #  - backend:/backend/certbot
     environment:
       - NODE_ENV=production
+
 
   #certbot:
   #  depends_on:
@@ -27,10 +30,10 @@ services:
    #   - backend:/backend/certbot
    # command: certonly --webroot --webroot-path=/backend/certbot
     #  --agree-tos --no-eff-email --email Petakioto2.0@gmail.com --dry-run -d www.simplegooglesearchbooks.org
-
 #volumes:
 #  backend:
 #  etc-letsencrypt:
 #networks:
 #  search-for-books:
 #    driver: bridge
+

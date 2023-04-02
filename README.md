@@ -1,4 +1,5 @@
 ## Список технологий проекта: // List of project technologies:  
+## react + typesript + mobx + docker(nginx)
 * react - _JavaScript-библиотека для создания пользовательских интерфейсов_ // _JavaScript library for creating user interfaces_  
 * typesript - _позволяет указать типы данных, передаваемых в коде, и имеет возможность сообщать об ошибках, когда типы не совпадают_ // _allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match_  
 * axios - _для запроса на сервере используя Google Книг API_ // _to query the server using the Google Books API_  
@@ -20,8 +21,8 @@
 
 ## Список команд для запуска // List of commands to run
 
-### `docker-compose up` [server_build localhost:80](http://localhost:80)
-Компилируем полностью финальную сборку и запускаем сервер (docker-compose using 80:80 localhost:80)// We compile the complete final assembly and start the server(docker-compose using localhost:80)
+### `docker-compose up` [server_build localhost:3000](http://localhost:3000)
+Компилируем полностью финальную сборку и запускаем сервер (docker-compose using 3000:80 localhost:3000)// We compile the complete final assembly and start the server(docker-compose using localhost:3000)
 ### `npm run react-client`  
 Запуск нашего react-client в режиме разработки // Running our react-client in development mode
 ### `npm run build-react`  
@@ -35,6 +36,7 @@
 [Базовый DockerFile // Basic DockerFile](https://javascript.plainenglish.io/how-to-serve-a-react-app-with-nginx-in-a-non-root-docker-container-cbc4c6acc177)  
 [Оптимизация nginx.config//nginx.config optimization](https://itnext.io/nginx-create-react-app-gzip-tripple-your-lighthouse-performance-score-in-5-minutes-627465c3f445)  
 [Docker Build: Containerizing](https://www.youtube.com/watch?v=8VHheCkw-7k&t=3304s)
+ test_ssl
 
 TypeScript:
 [import images to use inside a React component with TypeScript](https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module)
