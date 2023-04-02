@@ -7,11 +7,10 @@
     "build-react": "npm run build --prefix client",
     "build-docker-prod-nginx": "docker build -f ./client/Dockerfile -t search-for-books:1.0.0-prod ./client",
     "dockerServer": "docker run -p 3000:80 -t search-for-books:1.0.0-prod",
-    "docker-compose": "docker-compose up"
-
+    "docker-compose-up": "docker-compose up"
   },
   "keywords": [],
-  "author": "",
+  "author": "Petr Elshin",
   "license": "ISC",
-  "description": ""
+  "description": "Google Books Search API"
 }

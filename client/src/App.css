@@ -1,13 +1,13 @@
-/*import global index font Nunito and set Background img*/
+/*import global font Rubik-Regular and set Background img*/
+@import "../src/styles/fontface.css";
 *{
+    font-family: Rubik-Regular, serif;
     padding: 0;
     margin: 0;
-    font-family: 'Nunito', sans-serif;
-
 }
 
 body{
-    background-image: url("../src/assets/images/open_book.png");
+    background-image: url("../src/assets/images/open_book.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

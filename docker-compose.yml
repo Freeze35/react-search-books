@@ -11,8 +11,8 @@ services:
     image: simple_google_search_books:1.0.0-prod
     volumes:
       - .:/client
-      - etc-letsencrypt:/etc/letsencrypt
-      - backend:/backend/certbot
+    #  - etc-letsencrypt:/etc/letsencrypt
+    #  - backend:/backend/certbot
     environment:
       - NODE_ENV=production
 
