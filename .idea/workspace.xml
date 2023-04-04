@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414058f9-b8e6-4ef4-9053-9189b5a574ae" name="Changes" comment="V.1.0.2 =&gt; Add jest final configuration(silent mod),">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+    <list default="true" id="414058f9-b8e6-4ef4-9053-9189b5a574ae" name="Changes" comment="V.1.0.3 =&gt; Docker reoptimiztion for CI/CD Pipeline,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +154,7 @@
       <workItem from="1680253497123" duration="10120000" />
       <workItem from="1680276731317" duration="57650000" />
       <workItem from="1680529604387" duration="16880000" />
-      <workItem from="1680609039148" duration="1863000" />
+      <workItem from="1680609039148" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -351,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680602975728</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="V.1.0.3 =&gt; Docker reoptimiztion for CI/CD Pipeline,">
+      <created>1680611081830</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1680611081830</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +379,8 @@
     <MESSAGE value="V.1.0.1 =&gt; Add fonts adapting + tests in work + refactor README.md + bootstrap small refactoring" />
     <MESSAGE value="V.1.0.1 =&gt; Add jest final configuration(silent mod)," />
     <MESSAGE value="V.1.0.2 =&gt; Add jest final configuration(silent mod)," />
-    <option name="LAST_COMMIT_MESSAGE" value="V.1.0.2 =&gt; Add jest final configuration(silent mod)," />
+    <MESSAGE value="V.1.0.3 =&gt; Docker reoptimiztion for CI/CD Pipeline," />
+    <option name="LAST_COMMIT_MESSAGE" value="V.1.0.3 =&gt; Docker reoptimiztion for CI/CD Pipeline," />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

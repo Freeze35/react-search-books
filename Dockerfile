@@ -7,7 +7,6 @@ COPY package*.json ./
 RUN npm ci --production
 
 COPY client .
-
 RUN npm run build
 
 #NGINX Web Server
