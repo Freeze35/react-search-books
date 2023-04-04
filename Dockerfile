@@ -4,9 +4,12 @@ WORKDIR /client
 
 COPY package*.json ./
 
+RUN npm install
+
 RUN npm ci --production
 
 COPY client .
+
 RUN npm run build
 
 #NGINX Web Server
