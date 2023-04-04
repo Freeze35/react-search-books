@@ -35,6 +35,7 @@ const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
                 <img className="book_image"
                      src={TakeDataBookComponent("imageBook",book)}
                      alt={""}
+                     loading="lazy"
                 />
                 </Suspense>
                 <h2 className="text_decoration category">{TakeDataBookComponent("category",book)}</h2>

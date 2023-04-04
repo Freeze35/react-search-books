@@ -3,19 +3,21 @@ import App from "../App";
 import {render, screen} from "@testing-library/react";
 import ContextProvider from "../ContextProvider";
 import '@testing-library/jest-dom'
+import SearchAndSort from "../components/searchComponent/SearchAndSort";
+import {BrowserRouter} from "react-router-dom";
 
 describe("App",  () => {
-    it("render App component", () => {
-        render(<ContextProvider>
-            <App/></ContextProvider>);
 
-        expect(screen.getByText(/serd/i)).toBeInTheDocument()
-    })
     it("render App component", () => {
-        render(<ContextProvider>
-            <App/></ContextProvider>);
+        render(
+            <ContextProvider>
+                <BrowserRouter>
+                    <SearchAndSort/>
+                </BrowserRouter>
+            </ContextProvider>
+        );
 
-        expect(screen.getByText(/serd/i)).toBeInTheDocument()
+        expect(screen.getByLabelText(/Поиск/i)).toBeInTheDocument()
     })
 
     /*it("renders the customer's first name.", () => {

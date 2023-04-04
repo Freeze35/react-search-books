@@ -2,6 +2,10 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
+  verbose: true,
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
+  coverageDirectory: 'coverage',
   "testMatch": [
     "**/src/tests/*.+(ts|tsx|js|jsx)",
   ],
@@ -9,11 +13,10 @@ module.exports = {
       "node_modules/(?!axios)"],
   //Identity our css|sass ues library
   moduleNameMapper: {
-    "\\.(css|sass|less|scss)$": "identity-obj-proxy",
+    "\\.(css|sass|less|scss|svg)$": "identity-obj-proxy",
   },
   setupFilesAfterEnv: [
-    "@testing-library/jest-dom/extend-expect",
-    "@testing-library/jest-dom"
+    "@testing-library/jest-dom",
   ],
   /*"transform": {
     "^.+\\.jsx?$": "babel-jest",
@@ -23,6 +26,7 @@ module.exports = {
     "^.+\\.svg$": "<rootDir>/src/tests/transformers/svgTransform.js",
   }*/
   transform: {
-    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+    "^.+\\.tsx$": "ts-jest",
+    "^.+\\.ts$": "ts-jest",
   }
 };

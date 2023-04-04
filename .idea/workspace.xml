@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="V.1.0.1 =&gt; Add fonts adapting + tests in work + refactor README.md + bootstrap small refactoring">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Rubik-Regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/open_book.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/tests/__mocks__/svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/open_book.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/open_book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/fontface.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/fontface.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/tests/__mocks__/fileMock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/tests/app.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/tests/screen.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/tests/transformers/svgTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/tests/transformers/svgTransform.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,57 +52,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.12.1",
-    "javascript.nodejs.core.library.typings.version": "18.15.11",
-    "last_opened_file_path": "D:/T/online-store/search-for-books/client/src/assets/fonts",
-    "nodejs.jest.jest_package": "D:/T/online-store/search-for-books/client/node_modules/react-scripts",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/T/online-store/search-for-books/client/src/assets/images&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/T/online-store/search-for-books/client/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\T\online-store\search-for-books\client\src\assets\fonts" />
       <recent name="D:\T\online-store\search-for-books\client\src\assets\images" />
+      <recent name="D:\T\online-store\search-for-books\client\src\assets\fonts" />
       <recent name="D:\T\online-store\search-for-books\client\public" />
       <recent name="D:\T\online-store\search-for-books\client\src\components\searchComponent" />
       <recent name="D:\T\online-store\search-for-books\client\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books\client\src\jestconfig" />
+      <recent name="D:\T\online-store\search-for-books\client\src\routes" />
       <recent name="D:\T\online-store\search-for-books\client\src\styles" />
       <recent name="D:\T\online-store\search-for-books\client\src" />
       <recent name="D:\T\online-store\search-for-books\client\src\tests\transformers" />
-      <recent name="D:\T\online-store\search-for-books" />
-      <recent name="D:\T\online-store\search-for-books\client" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
-    <configuration name="App.render App component (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$/client" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/client/src/tests/app.test.tsx" />
-      <test-names>
-        <test-name value="App" />
-        <test-name value="render App component" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="jest" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="docker-build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
       <scripts>
-        <script value="jest" />
+        <script value="docker-build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose-up" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docker-compose-up" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve-react-build-start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve-react-build-start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -112,23 +134,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test2" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.docker-compose-up" />
+        <item itemvalue="npm.serve-react-build-start" />
+        <item itemvalue="npm.docker-build" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.test2" />
-        <item itemvalue="npm.jest" />
-        <item itemvalue="Jest.App.render App component (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +166,8 @@
       <workItem from="1680101752384" duration="75598000" />
       <workItem from="1680251032724" duration="2422000" />
       <workItem from="1680253497123" duration="10120000" />
-      <workItem from="1680276731317" duration="39350000" />
+      <workItem from="1680276731317" duration="57650000" />
+      <workItem from="1680529604387" duration="16463000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -317,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680475552696</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="V.1.0.1 =&gt; Add fonts adapting + tests in work + refactor README.md + bootstrap small refactoring">
+      <created>1680475784263</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1680475784263</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

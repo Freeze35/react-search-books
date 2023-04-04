@@ -40,6 +40,7 @@ TypeScript:
 [import images to use inside a React component with TypeScript](https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module)
 
 Jest configuration ts-jest:
+for resolve problem svg using jest --silent mod
 for init jest.config file => npx ts-jest config:init  
 [axios fix](https://stackoverflow.com/questions/74940474/jest-encountered-an-unexpected-token)
 [jestjs.io](https://jestjs.io/docs/getting-started#using-typescript)
@@ -54,15 +55,35 @@ npm i -D ts-node
 [react tests js-dom](https://stackoverflow.com/questions/56547215/react-testing-library-why-is-tobeinthedocument-not-a-function)  
 [ssl-config](https://ssl-config.mozilla.org/)
 
-## Ремарка подключения fonts
-[connect fonts](https://www.youtube.com/watch?v=GwA0BN5RgB0)
+## Ремарка подключения fonts and Optimizing images
+[Таким образом, браузеры, поддерживающие предварительную загрузку, будут предварительно загружать woff2 // So browsers that support preloading will preload woff2
+](https://stackoverflow.com/questions/1330825/preloading-font-face-fonts)
+[connect fonts](https://www.youtube.com/watch?v=GwA0BN5RgB0)  
 В файле fontface.css описываем подключаемые шрифты для разных систем  
 экспортируем к нашему центральному App.css и  
 объявляем на глобальном уровне именно этот font  //  
 In the fontface.css file, we describe the included fonts for different systems
 export to our central App.css and
-we declare at the global level exactly this font
+we declare at the global level exactly this font  serif for default
 ```
 *{
 font-family: Rubik-Regular, serif;}
+```
+
+for optimize images =>
+use resolution picture 1920 1280 or on choice author  
+changing in any redactor of picture   
+=>
+compress (reduce 50-90% size) our image [compresspng.com](https://compresspng.com/)  
+=>  
+for better optimaztion ready image use | recommended WEBP format of picture [squoosh](https://squoosh.app/) 
+
+для отдельных изображений для ускорения подгрузки лучше использовать loading="lazy"[loading="lazy"](https://stackoverflow.com/questions/69054825/how-should-i-implement-lazy-loading-for-my-images-in-react)  
+
+```
+<img className="book_image"
+     src={TakeDataBookComponent("imageBook",book)}
+     alt={""}
+     loading="lazy"
+/>
 ```

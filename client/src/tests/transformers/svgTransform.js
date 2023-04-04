@@ -1,10 +1,9 @@
-const path = require('path');
-
 module.exports = {
-    process(sourceText, sourcePath) {
-        return {
-            code: `module.exports = ${JSON.stringify(path.basename(sourcePath))};`,
-        };
+    process() {
+        return { code: 'module.exports = {};' };
+    },
+    getCacheKey() {
+        // The output is always the same.
+        return 'svgTransform';
     },
 };
-
