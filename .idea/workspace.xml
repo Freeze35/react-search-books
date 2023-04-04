@@ -67,51 +67,32 @@
       <recent name="D:\T\online-store\search-for-books\client\src\tests\transformers" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.client/Dockerfile prod">
-    <configuration name="App" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.docker-compose-up">
+    <configuration name="docker-build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docker-build" />
+      </scripts>
       <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$/client" />
       <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/client/src/tests/App.test.tsx" />
-      <test-names>
-        <test-name value="App" />
-      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="App.render App component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$/client" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/client/src/tests/App.test.tsx" />
-      <test-names>
-        <test-name value="App" />
-        <test-name value="render App component" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="client/Dockerfile prod" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="nginxalpine_prod" />
-          <option name="buildCliOptions" value="--target prod" />
-          <option name="buildKitEnabled" value="true" />
-          <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="client/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="docker-compose-up" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="docker-compose" />
+        <script value="docker-compose-up" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve-react-build-start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve-react-build-start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -127,13 +108,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.docker-compose-up" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.docker-compose" />
-        <item itemvalue="Jest.App.render App component" />
-        <item itemvalue="Jest.App" />
-        <item itemvalue="Docker.client/Dockerfile prod" />
+        <item itemvalue="npm.serve-react-build-start" />
+        <item itemvalue="npm.docker-build" />
       </list>
     </recent_temporary>
   </component>
