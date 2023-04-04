@@ -40,7 +40,8 @@ TypeScript:
 [import images to use inside a React component with TypeScript](https://stackoverflow.com/questions/52759220/importing-images-in-typescript-react-cannot-find-module)
 
 Jest configuration ts-jest:
-for resolve problem svg using jest --silent mod
+for resolve problem svg using jest --silent mod  
+if usinf create react app  npm install -g svgo
 for init jest.config file => npx ts-jest config:init  
 [axios fix](https://stackoverflow.com/questions/74940474/jest-encountered-an-unexpected-token)
 [jestjs.io](https://jestjs.io/docs/getting-started#using-typescript)

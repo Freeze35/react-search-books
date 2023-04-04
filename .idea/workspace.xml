@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414058f9-b8e6-4ef4-9053-9189b5a574ae" name="Changes" comment="V.1.0.1 =&gt; Add jest final configuration(silent mod)," />
+    <list default="true" id="414058f9-b8e6-4ef4-9053-9189b5a574ae" name="Changes" comment="V.1.0.2 =&gt; Add jest final configuration(silent mod),">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,19 +68,19 @@
       <recent name="D:\T\online-store\search-for-books\client\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books" />
       <recent name="D:\T\online-store\search-for-books\client\src\jestconfig" />
       <recent name="D:\T\online-store\search-for-books\client\src\routes" />
       <recent name="D:\T\online-store\search-for-books\client\src\styles" />
       <recent name="D:\T\online-store\search-for-books\client\src" />
-      <recent name="D:\T\online-store\search-for-books\client\src\tests\transformers" />
     </key>
   </component>
   <component name="RunManager" selected="npm.docker-compose-up">
-    <configuration name="docker-build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
+    <configuration name="build-docker-prod-nginx" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="docker-build" />
+        <script value="build-docker-prod-nginx" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -119,17 +129,17 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.docker-compose-up" />
+        <item itemvalue="npm.build-docker-prod-nginx" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.serve-react-build-start" />
-        <item itemvalue="npm.docker-build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d50b93a3-6e6f-434c-8138-5961bba46e91" name="Changes" comment="" />
+      <changelist id="414058f9-b8e6-4ef4-9053-9189b5a574ae" name="Changes" comment="V.1.0.2 =&gt; Add jest final configuration(silent mod)," />
       <created>1679379555806</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -150,6 +160,7 @@
       <workItem from="1680253497123" duration="10120000" />
       <workItem from="1680276731317" duration="57650000" />
       <workItem from="1680529604387" duration="16880000" />
+      <workItem from="1680609039148" duration="1863000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -333,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680602752727</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="V.1.0.2 =&gt; Add jest final configuration(silent mod),">
+      <created>1680602975728</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680602975728</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +377,8 @@
     <MESSAGE value="V.1.0.0 =&gt; Docker fixes + small css styling + refactor README.md" />
     <MESSAGE value="V.1.0.1 =&gt; Add fonts adapting + tests in work + refactor README.md + bootstrap small refactoring" />
     <MESSAGE value="V.1.0.1 =&gt; Add jest final configuration(silent mod)," />
-    <option name="LAST_COMMIT_MESSAGE" value="V.1.0.1 =&gt; Add jest final configuration(silent mod)," />
+    <MESSAGE value="V.1.0.2 =&gt; Add jest final configuration(silent mod)," />
+    <option name="LAST_COMMIT_MESSAGE" value="V.1.0.2 =&gt; Add jest final configuration(silent mod)," />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

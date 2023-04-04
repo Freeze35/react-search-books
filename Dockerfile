@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm ci --production
 
-COPY . .
+COPY client .
 
 RUN npm run build
 
