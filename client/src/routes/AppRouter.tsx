@@ -2,8 +2,7 @@ import React, {useContext, useEffect} from 'react';
 import {Navigate, Route, Routes, useNavigate} from "react-router-dom";
 import {booksRoutes} from "./routes";
 import {MAIN_ROUTE} from "../assets/const";
-import {Context} from "../ContextProvider";
-
+import {Context} from "../index";
 
 const AppRouter = () => {
     const {booksStore} = useContext(Context)
