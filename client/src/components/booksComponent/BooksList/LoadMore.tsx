@@ -13,12 +13,10 @@ interface LoadMoreInterface {
 
 const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hidden, className}) => {
 
-    const totalItemsBook = booksStore.books.totalItems
-    const startIndexFetchApi = booksStore.startIndexFetchApi
     //axios request
     const chunkRequest15 = (): Promise<any> => {
         return fetchAddingBooks(booksStore.searchQuery, booksStore,
-            booksStore.optionRelevance, booksStore.subjectCategory, "15", startIndexFetchApi)
+            booksStore.optionRelevance, booksStore.subjectCategory, "15", booksStore.startIndexFetchApi)
     }
     //Load by 15 books request 2 time = 30 books in full request
     //it's this will speed up the rendering of elements but Google API limit 1000 per day
@@ -31,7 +29,7 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
 
     }
     //text number of unloaded books
-    let unloaded = Number(totalItemsBook) - Number(startIndexFetchApi)
+    let unloaded = Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)
 
     return (
         <div>
@@ -45,10 +43,11 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
                         {
                         unloaded>=0
                             ? `Remaining unloaded books: 
-                            ${Number(totalItemsBook) - Number(startIndexFetchApi)}`
+                            ${Number(booksStore.books.totalItems) - Number(booksStore.startIndexFetchApi)}`
                             : `No more books`
                         }
                     </p>
+
                 </Row>
                 : ""
             }
