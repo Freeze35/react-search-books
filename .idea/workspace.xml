@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414058f9-b8e6-4ef4-9053-9189b5a574ae" name="Changes" comment="V.1.0.3 =&gt; Docker reoptimiztion for CI/CD Pipeline,">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/tests/__mocks__/booksMockData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/tests/booksSearch.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/tests/helpers/testhelpers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/tests/unit_tests_screen.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/tests/screen.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,73 +53,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/T/online-store/search-for-books/client/src/assets/images&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;D:/T/online-store/search-for-books/client/node_modules/react-scripts&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.12.1",
+    "javascript.nodejs.core.library.typings.version": "18.15.11",
+    "last_opened_file_path": "D:/T/online-store/search-for-books/client/src/tests/transformers",
+    "nodejs.jest.jest_package": "D:/T/online-store/search-for-books/client/node_modules/react-scripts",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\T\\online-store\\search-for-books\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books\client\src\tests\transformers" />
       <recent name="D:\T\online-store\search-for-books\client\src\assets\images" />
       <recent name="D:\T\online-store\search-for-books\client\src\assets\fonts" />
       <recent name="D:\T\online-store\search-for-books\client\public" />
       <recent name="D:\T\online-store\search-for-books\client\src\components\searchComponent" />
-      <recent name="D:\T\online-store\search-for-books\client\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\T\online-store\search-for-books\client\src\tests" />
+      <recent name="D:\T\online-store\search-for-books\client\src" />
       <recent name="D:\T\online-store\search-for-books" />
       <recent name="D:\T\online-store\search-for-books\client\src\jestconfig" />
       <recent name="D:\T\online-store\search-for-books\client\src\routes" />
-      <recent name="D:\T\online-store\search-for-books\client\src\styles" />
-      <recent name="D:\T\online-store\search-for-books\client\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.docker-compose-up">
-    <configuration name="build-docker-prod-nginx" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.react-client">
+    <configuration name="App.render App component" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/client/src/tests/screen.test.tsx" />
+      <test-names>
+        <test-name value="App" />
+        <test-name value="render App component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="react-client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build-docker-prod-nginx" />
+        <script value="react-client" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose-up" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="test (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="docker-compose-up" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="serve-react-build-start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="serve-react-build-start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
+        <script value="test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -118,13 +129,33 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test2" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test2" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test:jest" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:jest" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docker-compose-up" />
-        <item itemvalue="npm.build-docker-prod-nginx" />
+        <item itemvalue="npm.test (1)" />
+        <item itemvalue="npm.react-client" />
+        <item itemvalue="npm.test:jest" />
         <item itemvalue="npm.test" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.serve-react-build-start" />
+        <item itemvalue="npm.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +183,13 @@
       <workItem from="1680253497123" duration="10120000" />
       <workItem from="1680276731317" duration="57650000" />
       <workItem from="1680529604387" duration="16880000" />
-      <workItem from="1680609039148" duration="3457000" />
+      <workItem from="1680609039148" duration="22413000" />
+      <workItem from="1680704658347" duration="24501000" />
+      <workItem from="1680778684383" duration="128000" />
+      <workItem from="1680778841665" duration="819000" />
+      <workItem from="1680779695551" duration="14765000" />
+      <workItem from="1680800753290" duration="1136000" />
+      <workItem from="1680801931011" duration="22428000" />
     </task>
     <task id="LOCAL-00001" summary="V.0.9.5 work LoadMore and PageInfo">
       <created>1679714457780</created>
@@ -357,7 +394,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680612346662</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="V.1.0.3 =&gt; Docker reoptimiztion for CI/CD Pipeline,">
+      <created>1680612728848</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1680612728848</updated>
+    </task>
+    <task id="LOCAL-00031" summary="V.1.0.3 =&gt; Docker reoptimiztion for CI/CD Pipeline,">
+      <created>1680612780437</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680612780437</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,5 +444,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/search_for_books$App_render_App_component.info" NAME="App.render App component Coverage Results" MODIFIED="1680178782575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/search_for_books$App.info" NAME="App Coverage Results" MODIFIED="1680788177596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

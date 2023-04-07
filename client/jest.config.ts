@@ -6,11 +6,17 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
   coverageDirectory: 'coverage',
-  "testMatch": [
+  testMatch: [
     "**/src/tests/*.+(ts|tsx|js|jsx)",
   ],
   transformIgnorePatterns: [
-      "node_modules/(?!axios)"],
+    "node_modules/(?!axios)"],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/src/tests",
+    "declare.d.ts",
+    "index.tsx"
+  ]
+  ,
   //Identity our css|sass ues library
   moduleNameMapper: {
     "\\.(css|sass|less|scss|svg)$": "identity-obj-proxy",
@@ -26,7 +32,6 @@ module.exports = {
     "^.+\\.svg$": "<rootDir>/src/tests/transformers/svgTransform.js",
   }*/
   transform: {
-    "^.+\\.tsx$": "ts-jest",
-    "^.+\\.ts$": "ts-jest",
+    "^.+\\.(js|jsx|ts|tsx)$": "ts-jest",
   }
 };

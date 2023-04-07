@@ -9,7 +9,7 @@ const BookPage = () => {
 
     return (
 
-            <div className="book_container">
+            <div data-testid="book-page" className="book_container">
                 <div>
                     <div className="image_back">
                         <Suspense fallback={<div>asdwa</div>}>

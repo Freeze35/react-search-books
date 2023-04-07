@@ -15,7 +15,7 @@ interface BookInterface {
 const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
 
     //fetch one book by id and move to BookPage
-    const getBookData=(id:string,navigate:any) =>{
+    const getBookData=(id:string,navigate:any,booksStore:any) =>{
         fetchOneBook(id)
             .then(res => {
                     booksStore.setOneBookData(res)
@@ -27,8 +27,8 @@ const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
 
 
     return (
-        <Col md={3} className="d-flex" onClick={()=> {
-            getBookData(book.id,navigate)
+        <Col data-testid="book-item" md={3} className="d-flex" onClick={()=> {
+            getBookData(book.id,navigate,booksStore)
         }}>
             <Card className="container_books">
                 <Suspense fallback={<Loader visible={true}/>}>

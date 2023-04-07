@@ -17,32 +17,33 @@ const BooksList: React.FC<ContainerProps> = observer(() => {
         return totalItems !== undefined
     }
 
-    return (<>
-        <Col className="booksList_background">
-            <Row>
-                {checkTotalItems()
-                    ? <div className="founded" id="Found">Found {totalItems} results</div>
-                    : ""
-                }
-            </Row>
-            <Row className="books_list" xs="auto">
-                {booksStore.books.items?.map((book: any) => {
-                    return (
-                        <BookItem book={book} key={book.id + book.etag}
-                                  navigate={navigate} booksStore={booksStore}
-                        />)
-                })}
-            </Row>
-        </Col>
+    return (
+        <div data-testid="books-list">
+            <Col className="booksList_background">
+                <Row>
+                    {checkTotalItems()
+                        ? <div className="founded" id="Found">Found {totalItems} results</div>
+                        : ""
+                    }
+                </Row>
+                <Row className="books_list" xs="auto">
+                    {booksStore.books.items?.map((book: any) => {
+                        return (
+                            <BookItem book={book} key={book.id + book.etag}
+                                      navigate={navigate} booksStore={booksStore}
+                            />)
+                    })}
+                </Row>
+            </Col>
             {booksStore.isLoading && !checkTotalItems()
                 ? <Loader visible={true}/>
                 : ""}
             {booksStore.isLoading
-                ?<LoadMore className="booksList_background" hidden={true}
-                           checkTotalItems={checkTotalItems()} booksStore={booksStore}/>
-                :<LoadMore className="booksList_background" hidden={false}
-                           checkTotalItems={checkTotalItems()} booksStore={booksStore}/>}
-        </>
+                ? <LoadMore className="booksList_background" hidden={true}
+                            checkTotalItems={checkTotalItems()} booksStore={booksStore}/>
+                : <LoadMore className="booksList_background" hidden={false}
+                            checkTotalItems={checkTotalItems()} booksStore={booksStore}/>}
+        </div>
 
     );
 });

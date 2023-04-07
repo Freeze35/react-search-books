@@ -1,3 +1,11 @@
+# Приложения для отображения списока Goggle Books // Applications to display a list of Goggle Books [Использование Google Books API // Using the API](https://developers.google.com/books/docs/v1/using?hl=ru#query-params)  
+    Включается в себя поиск определенным запросам; // Includes search for specific queries;  
+    Совместный поиск с определенными категориями; // Joint search with certain categories;  
+    Сортировка по актуальности, новизне; // Sorting by relevance, newest;  
+    Поиск по категориям; // Search by category;  
+    Пагинацию на запрос дополнительных книг в низу страницы; // Pagination to request additional books at the bottom of the page;  
+    При нажатии на выбранную книгу открывает полную информацию о данной книге; //  When you click on the selected book, it opens full information about this book;  
+
 ## Список технологий проекта: // List of project technologies:  
 * react - _JavaScript-библиотека для создания пользовательских интерфейсов_ // _JavaScript library for creating user interfaces_  
 * typesript - _позволяет указать типы данных, передаваемых в коде, и имеет возможность сообщать об ошибках, когда типы не совпадают_ // _allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match_  
@@ -8,15 +16,6 @@
 * react-bootstrap - _стилизуем наше прилложение_ // _styling for app_  
 * mobx: - _создает наше(наши) глобальное хранилище с действиемя и переменнымми_  //  _create our(ours) Store for global action with action and variables_  
 * mobx-react-lite - _дает нам отслеживание изменений глобальных переменных (достаточно небольшой размер пакета)_ // _gives an observer to monitor changes in global variables (package small size for using)_
-
-# Приложения для отображения списока Goggle Books // Applications to display a list of Goggle Books
-    Включается в себя поиск определенным запросам; // Includes search for specific queries;  
-    Совместный поиск с определенными категориями; // Joint search with certain categories;  
-    Сортировка по актуальности, новизне; // Sorting by relevance, newest;  
-    Поиск по категориям; // Search by category;  
-    Пагинацию на запрос дополнительных книг в низу страницы; // Pagination to request additional books at the bottom of the page;  
-    При нажатии на выбранную книгу открывает полную информацию о данной книге; //  When you click on the selected book, it opens full information about this book;  
-
 
 ## Список команд для запуска // List of commands to run
 
@@ -54,7 +53,11 @@ npm i -D ts-node
 [jest-dom TypeError: expect(...).toBeInTheDocument](https://github.com/nrwl/nx/issues/9140)  
 [wrap our tests in context Proivder](https://stackoverflow.com/questions/75728532/uncaught-typeerror-cannot-destructure-property-basename-of-react2-usecontext)  
 [react tests js-dom](https://stackoverflow.com/questions/56547215/react-testing-library-why-is-tobeinthedocument-not-a-function)  
-[ssl-config](https://ssl-config.mozilla.org/)
+[ssl-config](https://ssl-config.mozilla.org/)  
+Ремарка для обеспечения взаимодействия userEvent и
+Provider data.   
+Следует Объявлять переменные на прямую в функции,
+внешнее обращение к переменным могут довать сбои при тестах   
 
 ## Ремарка подключения fonts and Optimizing images
 [Таким образом, браузеры, поддерживающие предварительную загрузку, будут предварительно загружать woff2 // So browsers that support preloading will preload woff2

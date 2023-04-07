@@ -17,7 +17,6 @@ const SearchAndSort = observer(() => {
     let bookSearchQuery = booksStore.searchQuery
 
     const SetDataButton = useCallback((bookSearchQuery:string) => {
-        console.log({bookSearchQuery2: bookSearchQuery})
         if (bookSearchQuery) {
             navigate(`/booklist`)
             fetchBooksFirstTime(bookSearchQuery, booksStore,
@@ -26,8 +25,8 @@ const SearchAndSort = observer(() => {
     },[])
 
 
-    const setDataEnter = useCallback((event: React.KeyboardEvent<HTMLInputElement>) => {
-        console.log("SetDataEnter")
+    const setDataEnter = useCallback(
+        (event: React.KeyboardEvent<HTMLInputElement>,bookSearchQuery:string) => {
         if (event.key === "Enter" && bookSearchQuery) {
             navigate(`/booklist`)
             fetchBooksFirstTime(booksStore.searchQuery, booksStore,
@@ -40,7 +39,7 @@ const SearchAndSort = observer(() => {
     }
 
     return (
-        <div className="search_container">
+        <div data-testid="search-and-sort" className="search_container">
             <h1 className="position_set row_h1">Search for Books</h1>
             <Row id="row_search" className="position_set">
                 <input id="input_search" className="position_set input_search"
@@ -48,9 +47,9 @@ const SearchAndSort = observer(() => {
                        value={bookSearchQuery}
                        onChange={setSearchQuery}
                        type="text"
-                       onKeyDown={setDataEnter}
+                       onKeyDown={(event)=>setDataEnter(event,bookSearchQuery)}
                 />
-                <button id="button_search" aria-label="Поиск..." className="position_set button_search"
+                <button data-testid="button-search" id="button_search" aria-label="Поиск..." className="position_set button_search"
                         onClick={()=>SetDataButton(bookSearchQuery)}>
                     <SearchLoop id="search_loop" className="search_loop"/></button>
             </Row>
