@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "react-client": "npm run start --prefix client",
+    "start": "npm run start --prefix client",
     "build-react": "npm run build --prefix client",
     "build-docker-prod-nginx": "docker build -f Dockerfile -t search-for-books:1.0.0-prod ./",
     "dockerServer": "docker run -p 3000:80 -t search-for-books:1.0.0-prod",

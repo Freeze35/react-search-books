@@ -27,7 +27,7 @@ const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
 
 
     return (
-        <Col data-testid="book-item" md={3} className="d-flex" onClick={()=> {
+        <div style={{display:"flex",flexWrap:"wrap"}} data-testid="book-item" onClick={()=> {
             getBookData(book.id,navigate,booksStore)
         }}>
             <Card className="container_books">
@@ -43,7 +43,7 @@ const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
                 <p className="text_decoration">{TakeDataBookComponent("authors",book)}</p>
             </Card>
 
-        </Col>
+        </div>
 
     );
 };

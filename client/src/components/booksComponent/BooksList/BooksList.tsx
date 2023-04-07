@@ -19,22 +19,22 @@ const BooksList: React.FC<ContainerProps> = observer(() => {
 
     return (
         <div data-testid="books-list">
-            <Col className="booksList_background">
-                <Row>
+            <div className="booksList_background">
+                <div>
                     {checkTotalItems()
                         ? <div className="founded" id="Found">Found {totalItems} results</div>
                         : ""
                     }
-                </Row>
-                <Row className="books_list" xs="auto">
+                </div>
+                <div className="books_list">
                     {booksStore.books.items?.map((book: any) => {
                         return (
                             <BookItem book={book} key={book.id + book.etag}
                                       navigate={navigate} booksStore={booksStore}
                             />)
                     })}
-                </Row>
-            </Col>
+                </div>
+            </div>
             {booksStore.isLoading && !checkTotalItems()
                 ? <Loader visible={true}/>
                 : ""}

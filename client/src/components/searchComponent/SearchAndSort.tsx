@@ -41,7 +41,7 @@ const SearchAndSort = observer(() => {
     return (
         <div data-testid="search-and-sort" className="search_container">
             <h1 className="position_set row_h1">Search for Books</h1>
-            <Row id="row_search" className="position_set">
+            <div id="row_search" className="position_set">
                 <input id="input_search" className="position_set input_search"
                        placeholder={`Поиск..`}
                        value={bookSearchQuery}
@@ -52,7 +52,7 @@ const SearchAndSort = observer(() => {
                 <button data-testid="button-search" id="button_search" aria-label="Поиск..." className="position_set button_search"
                         onClick={()=>SetDataButton(bookSearchQuery)}>
                     <SearchLoop id="search_loop" className="search_loop"/></button>
-            </Row>
+            </div>
             <SortComponent/>
         </div>
     );

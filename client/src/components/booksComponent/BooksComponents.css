@@ -1,7 +1,7 @@
 .founded {
     text-align: center;
     font-size: clamp(10px, 1.5vw, 38px);
-    margin:15px 0 20px;
+    padding: 15px 0 15px;
 }
 
 .booksList_background {
@@ -13,7 +13,7 @@
     margin: 10px 10px 25px;
     padding: 15px;
     background: #ffffff;
-    width: 20vw;
+    width: 21vw;
     height: auto;
     min-width: 180px;
     box-shadow: 0 0 4px #040217;
@@ -27,12 +27,17 @@
 }
 
 .books_list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, max-content));
+    grid-gap: 0;
+    justify-content: center;
+    padding: initial;
 }
 
 @media screen and (max-width: 768px) {
     .books_list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 }
@@ -73,9 +78,9 @@
 .load_more_button{
     padding: 2vw 4vw 2vw;
     text-align: center;
-    position: relative;
-
+    justify-content: center;
     height: auto;
+    display: flex;
 }
 
 .load_more_text{
@@ -86,6 +91,7 @@
     border-radius: 12vw;
     font-size: clamp(10px, 2.8vw, 38px);
     background: rgb(72, 175, 96);
-    width: 100vw;
+    width: 150vw;
     cursor: pointer;
+    justify-content: center;
 }

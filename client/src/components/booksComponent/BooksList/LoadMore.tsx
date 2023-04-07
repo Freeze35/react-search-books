@@ -36,7 +36,7 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
     return (
         <div>
             {checkTotalItems ?
-                <Row className={`load_more_button ${className}`} onClick={() => loadMoreBooks()}>
+                <div className={`load_more_button ${className}`} onClick={() => loadMoreBooks()}>
                     {booksStore.isLoading
                         ? <Loader visible={true}/>
                         : ""}
@@ -49,7 +49,7 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
                             : `No more books`
                         }
                     </p>
-                </Row>
+                </div>
                 : ""
             }
         </div>
