@@ -1,4 +1,4 @@
-import React, {useCallback, useContext} from 'react';
+import React, {useContext} from 'react';
 import "./SearchAndSort.css"
 import {observer} from "mobx-react-lite";
 import {Row} from "react-bootstrap";
@@ -16,23 +16,23 @@ const SearchAndSort = observer(() => {
     const navigate = useNavigate()
     let bookSearchQuery = booksStore.searchQuery
 
-    const SetDataButton = useCallback((bookSearchQuery:string) => {
+    const SetDataButton = (bookSearchQuery:string) => {
         if (bookSearchQuery) {
             navigate(`/booklist`)
             fetchBooksFirstTime(bookSearchQuery, booksStore,
                 booksStore.optionRelevance,booksStore.subjectCategory).then()
         }
-    },[])
+    }
 
 
-    const setDataEnter = useCallback(
+    const setDataEnter =
         (event: React.KeyboardEvent<HTMLInputElement>,bookSearchQuery:string) => {
         if (event.key === "Enter" && bookSearchQuery) {
             navigate(`/booklist`)
             fetchBooksFirstTime(booksStore.searchQuery, booksStore,
                 booksStore.optionRelevance,booksStore.subjectCategory).then()
         }
-    },[])
+    }
 
     const setSearchQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
              booksStore.setSearchQuery(e.target.value)
