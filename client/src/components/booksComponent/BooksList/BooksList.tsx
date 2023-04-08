@@ -13,7 +13,7 @@ const BooksList: React.FC<ContainerProps> = observer(() => {
     const navigate = useNavigate()
     const totalItems = booksStore.books.totalItems
 
-    let checkTotalItems = () => {
+    const checkTotalItems = () => {
         return totalItems !== undefined
     }
 

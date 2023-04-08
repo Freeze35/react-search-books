@@ -45,8 +45,8 @@ export const TakeDataBookComponent = (typeValue: string, book: any) => {
         //change our decoding text \u003cp\u003e to tage and return parsing text
         case "description":
             if (book.volumeInfo?.description !== undefined) {
-                let parser = new DOMParser()
-                let parseDocument = parser.parseFromString(book.volumeInfo.description, "text/html")
+                const parser = new DOMParser()
+                const parseDocument = parser.parseFromString(book.volumeInfo.description, "text/html")
                 return parseDocument.children[0].textContent
             }
 

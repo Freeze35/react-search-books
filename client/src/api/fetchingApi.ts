@@ -27,7 +27,7 @@ const fetchVariables = (booksStore: BooksStore, maxResults: string, startIndex: 
         }
     }
     //set Category type
-    let setCategory = (): string => {
+    const setCategory = (): string => {
         return subjectCategory
             ? `+subject:${subjectCategory}`
             : "";
@@ -35,11 +35,11 @@ const fetchVariables = (booksStore: BooksStore, maxResults: string, startIndex: 
 
     newMaxIndex()
     //set api maxResults
-    let maxResultsApi = `&maxResults=${maxResults}`
+    const maxResultsApi = `&maxResults=${maxResults}`
     //set api startIndex
-    let startIndexApi = `&startIndex=${startIndex}`
+    const startIndexApi = `&startIndex=${startIndex}`
     //set Order by, default:relevance
-    let orderByApi: string = `&orderBy=${orderBy}`
+    const orderByApi = `&orderBy=${orderBy}`
     return {maxResultsApi, startIndexApi, setCategory, orderByApi} as returnFetchVaribles
 }
 
@@ -119,7 +119,7 @@ export const fetchAddingBooks = async (searchQuery: string, booksStore: BooksSto
 // getting on book by id using it for render BookPage
 export const fetchOneBook = async (BookId: string | undefined) => {
     try {
-        let response = await axios.get(
+        const response = await axios.get(
             `https://www.googleapis.com/books/v1/volumes/
             ${BookId}?key=AIzaSyBGsfkXWsf_vXKf3SrvDmjByo0XQ3LvZuM`)
         return (response.data)

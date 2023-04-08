@@ -30,7 +30,7 @@ const LoadMore: React.FC<LoadMoreInterface> = ({checkTotalItems, booksStore, hid
 
     }
     //text number of unloaded books
-    let unloaded = Number(totalItemsBook) - Number(startIndexFetchApi)
+    const unloaded = Number(totalItemsBook) - Number(startIndexFetchApi)
 
     return (
         <div>
