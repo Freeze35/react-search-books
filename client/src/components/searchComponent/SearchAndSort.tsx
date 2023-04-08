@@ -13,7 +13,7 @@ const SearchAndSort = observer(() => {
 
     const {booksStore} = useContext(Context)
     const navigate = useNavigate()
-    let bookSearchQuery = booksStore.searchQuery
+    const bookSearchQuery = booksStore.searchQuery
 
     const SetDataButton = (bookSearchQuery:string) => {
         if (bookSearchQuery) {

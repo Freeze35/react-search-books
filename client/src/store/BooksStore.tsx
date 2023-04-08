@@ -8,12 +8,12 @@ interface BooksInterface{
 
 export default class BooksStore {
 
-    private _isLoading: boolean = false;
+    private _isLoading = false;
     private _books: BooksInterface = {}
-    private _optionRelevance: string = "relevance"
-    private _searchQuery: string = ""
-    private _subjectCategory: string = ""
-    private _startIndexFetchApi:string = "10"
+    private _optionRelevance = "relevance"
+    private _searchQuery = ""
+    private _subjectCategory = ""
+    private _startIndexFetchApi = "10"
     private _oneBookData: BooksInterface = {}
 
     constructor() {
@@ -28,7 +28,7 @@ export default class BooksStore {
         return this._isLoading
     }
 
-    setBooks = (books: {}) => {
+    setBooks = (books: Object) => {
         this._books = books
     }
 
@@ -41,7 +41,7 @@ export default class BooksStore {
 
     }
 
-    setOneBookData = (books: {}) => {
+    setOneBookData = (books: Object) => {
         this._oneBookData = books
     }
 

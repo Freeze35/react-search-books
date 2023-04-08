@@ -12,9 +12,9 @@ const ObsoleteWebpackPlugin = require("obsolete-webpack-plugin");
 const path = require("path");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
-const srcPath = path.resolve(__dirname, "./client/src/");
+const srcPath = path.resolve(__dirname, "./src/");
 const destPath = path.resolve(__dirname, "./build/"); // ('../Api/wwwroot')
-const assetsPath = "./client/public";
+const assetsPath = "./public";
 const filesThreshold = 8196; // (bytes) threshold for compression, url-loader plugins
 
 /* eslint-disable func-names */
