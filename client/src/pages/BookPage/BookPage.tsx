@@ -1,4 +1,4 @@
-import React, {Suspense, useContext} from 'react';
+import {Suspense, useContext} from 'react';
 import "./BookPage.css"
 import {TakeDataBookComponent} from "../../components/booksComponent/TakeDataBookComponent";
 import {Context} from "../../ContextProvider";

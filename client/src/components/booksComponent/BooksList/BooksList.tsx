@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Col, ContainerProps, Row} from "react-bootstrap";
+import {ContainerProps} from "react-bootstrap";
 import "../BooksComponents.css"
 import BookItem from "../BookItem";
 import {observer} from "mobx-react-lite";

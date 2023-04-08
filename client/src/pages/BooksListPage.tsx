@@ -1,4 +1,3 @@
-import React from 'react';
 import BooksList from "../components/booksComponent/BooksList/BooksList";
 
 

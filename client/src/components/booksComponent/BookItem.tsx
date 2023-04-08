@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import "./BooksComponents.css"
-import {Card, Col} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import {fetchOneBook} from "../../api/fetchingApi";
 import BooksStore from "../../store/BooksStore";
 import {TakeDataBookComponent} from "./TakeDataBookComponent";

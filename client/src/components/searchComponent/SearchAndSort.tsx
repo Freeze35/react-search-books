@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import "./SearchAndSort.css"
 import {observer} from "mobx-react-lite";
-import {Row} from "react-bootstrap";
 import {fetchBooksFirstTime} from "../../api/fetchingApi";
 import SortComponent from "../sortComponent/SortComponent";
 import {useNavigate} from "react-router-dom";
