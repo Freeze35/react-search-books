@@ -2,12 +2,14 @@ import React, {useContext} from 'react';
 import "./SearchAndSort.css"
 import {observer} from "mobx-react-lite";
 import {fetchBooksFirstTime} from "../../api/fetchingApi";
-import SortComponent from "../sortComponent/SortComponent";
 import {useNavigate} from "react-router-dom";
 import {ReactComponent as SearchLoop} from '../../assets/images/magnifying-glass-solid.svg';
 import {Context} from "../../ContextProvider";
+import { Suspense } from 'react';
+import SmallLoader from '../loaders/SmallLoader';
 
 
+const SortComponent = React.lazy(() => import('../sortComponent/SortComponent'));
 
 const SearchAndSort = observer(() => {
 
@@ -38,6 +40,7 @@ const SearchAndSort = observer(() => {
     }
 
     return (
+        <Suspense fallback={<SmallLoader className="search_container"/>}>
         <div data-testid="search-and-sort" className="search_container">
             <h1 className="position_set row_h1">Search for Books</h1>
             <div id="row_search" className="position_set">
@@ -54,6 +57,7 @@ const SearchAndSort = observer(() => {
             </div>
             <SortComponent/>
         </div>
+            </Suspense>
     );
 })
 

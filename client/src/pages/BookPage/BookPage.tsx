@@ -2,6 +2,7 @@ import {Suspense, useContext} from 'react';
 import "./BookPage.css"
 import {TakeDataBookComponent} from "../../components/booksComponent/TakeDataBookComponent";
 import {Context} from "../../ContextProvider";
+import SmallLoader from "../../components/loaders/SmallLoader";
 
 const BookPage = () => {
 
@@ -12,7 +13,7 @@ const BookPage = () => {
             <div data-testid="book-page" className="book_container">
                 <div>
                     <div className="image_back">
-                        <Suspense fallback={<div>asdwa</div>}>
+                        <Suspense fallback={<SmallLoader/>}>
                         <img className="book_image_page"
                              src={TakeDataBookComponent("imageBook", booksStore.oneBookData)}
                              alt={""}></img>

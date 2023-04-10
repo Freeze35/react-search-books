@@ -3,7 +3,7 @@ import {ContainerProps} from "react-bootstrap";
 import "../BooksComponents.css"
 import BookItem from "../BookItem";
 import {observer} from "mobx-react-lite";
-import Loader from "../../loader/Loader";
+import Loader from "../../loaders/Loader";
 import LoadMore from "./LoadMore";
 import {useNavigate} from "react-router-dom";
 import {Context} from "../../../ContextProvider";
@@ -14,12 +14,12 @@ const BooksList: React.FC<ContainerProps> = observer(() => {
     const totalItems = booksStore.books.totalItems
 
     const checkTotalItems = () => {
-        return totalItems !== undefined
+        return totalItems !== undefined && totalItems>0
     }
 
     return (
         <div data-testid="books-list">
-            <div className="booksList_background">
+            <div className={totalItems?"booksList_background":""}>
                 <div>
                     {checkTotalItems()
                         ? <div className="founded" id="Found">Found {totalItems} results</div>

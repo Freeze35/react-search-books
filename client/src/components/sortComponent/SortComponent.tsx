@@ -1,14 +1,12 @@
 import React, {useContext} from 'react';
 import {ContainerProps} from "react-bootstrap";
-import BooksSelector from "../selector/BooksSelector";
 import "./OptionSelector.css"
-
 import {observer} from "mobx-react-lite";
 import {fetchBooksFirstTime} from "../../api/fetchingApi";
 import {Context} from "../../ContextProvider";
 import {categoryMassive, optionMassive} from "./optionsMassive";
 
-
+const BooksSelector = React.lazy(() => import('../selector/BooksSelector'));
 
 const SortComponent: React.FC<ContainerProps> = observer(() => {
 
@@ -16,7 +14,6 @@ const SortComponent: React.FC<ContainerProps> = observer(() => {
 
     //Sorting our data {relevance,newest}
     const sortData = (sortType: string) => {
-        console.log("sortData")
         if (booksStore.searchQuery) {
             booksStore.setOptionRelevance(sortType)
             fetchBooksFirstTime(booksStore.searchQuery, booksStore, sortType, booksStore.subjectCategory).then()
@@ -26,7 +23,6 @@ const SortComponent: React.FC<ContainerProps> = observer(() => {
     }
 
     const categorySelector = (category: string) => {
-        console.log("categorySelector")
         if (booksStore.searchQuery) {
             booksStore.setSubjectCategory(category)
             fetchBooksFirstTime(booksStore.searchQuery, booksStore, booksStore.optionRelevance, category).then()

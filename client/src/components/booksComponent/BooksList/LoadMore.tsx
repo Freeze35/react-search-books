@@ -1,7 +1,7 @@
 import React from 'react';
 import BooksStore from "../../../store/BooksStore";
 import {fetchAddingBooks} from "../../../api/fetchingApi";
-import Loader from "../../loader/Loader";
+import Loader from "../../loaders/Loader";
 
 interface LoadMoreInterface {
     checkTotalItems: boolean

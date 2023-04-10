@@ -1,11 +1,13 @@
-import BooksList from "../components/booksComponent/BooksList/BooksList";
+import SmallLoader from "@/components/loaders/SmallLoader";
+import React, { Suspense } from "react";
 
+const BooksList = React.lazy(() => import('../components/booksComponent/BooksList/BooksList'));
 
 const BooksListPage = () => {
     return (
-        <div>
+        <Suspense fallback={<SmallLoader/>}>
             <BooksList/>
-        </div>
+        </Suspense>
     );
 };
 

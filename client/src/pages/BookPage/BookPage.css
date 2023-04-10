@@ -1,7 +1,7 @@
 .book_container{
     vertical-align: top;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: #ffffff;
     padding-bottom: 20px;
     display: flex;
@@ -44,16 +44,17 @@
 
 .info_book_block{
     padding: 40px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #ffffff;
 }
 
 .description_block{
+    margin: 5% 0 0;
     overflow:hidden;
     padding: 20px;
     border: solid 1px rgba(103, 103, 103, 0.2);
-    width: 42vw;
+    width: 100%;
     height: 40vh;
     scale: inherit;
     font-size: clamp(10px, 1.8vw, 38px);
@@ -75,7 +76,7 @@
         display: block;
     }
     .image_back {
-        width: 100vw;
+        width: 100%;
     }
     .description_block{
         width: 100%;
