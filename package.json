@@ -9,8 +9,8 @@
     "dockerServer": "docker run -p 3000:80 -t search-for-books:1.0.0-prod",
     "docker-compose-up": "docker-compose up",
     "test": "npm run test --prefix client",
-    "build-prod-webpack": "build-prod-webpack --prefix client",
-    "webpack-devserve": "webpack-devserve --prefix client"
+    "build-prod-webpack": "npm run build-prod-webpack --prefix client",
+    "webpack-devserve": "npm run webpack-devserve --prefix client"
   },
   "keywords": [],
   "author": "Petr Elshin",
