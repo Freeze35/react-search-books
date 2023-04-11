@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46ba0204-93f1-4d83-90d6-f5f5c041935d" name="Changes" comment="v1.0.9 =&gt;  webpack configuration for prod + style change + dist folder add for CD">
+      <change afterPath="$PROJECT_DIR$/client/src/components/helpers/checkExistsBooks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/12b2d907c96df9caf465.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/12b2d907c96df9caf465.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/139f8cb2f1f826d3d46b.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/278.f4938c1c9e8034bb9fa3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/327.f4938c1c9e8034bb9fa3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/327.f4938c1c9e8034bb9fa3.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/42535d1e2d489e27b525.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/42535d1e2d489e27b525.ttf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/619.f4938c1c9e8034bb9fa3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/663.f4938c1c9e8034bb9fa3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/663.f4938c1c9e8034bb9fa3.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/692.f4938c1c9e8034bb9fa3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/692.f4938c1c9e8034bb9fa3.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/6e5918a4c0fbd47934a7.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/786.f4938c1c9e8034bb9fa3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/c8a9345ae79813ec05d5.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/de9ced2ccfc8ad55cdbe.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/main.f4938c1c9e8034bb9fa3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/main.f4938c1c9e8034bb9fa3.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksComponents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BooksList/BooksList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +69,7 @@
       <recent name="D:\T\online-store\react-search-books\client" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build-prod-webpack (1)">
+  <component name="RunManager" selected="npm.build-prod-webpack">
     <configuration name="build-prod-webpack (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -70,11 +100,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -92,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build-prod-webpack (1)" />
         <item itemvalue="npm.build-prod-webpack" />
         <item itemvalue="npm.webpack-devserve" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.build-prod-webpack (1)" />
         <item itemvalue="npm.start (1)" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681100054522</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v1.0.9 =&gt;  webpack configuration for prod + style change + dist folder add for CD">
+      <created>1681101926184</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681101926184</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -13,6 +13,12 @@
     margin: 10% 0 5%;
     align-items: center;
     justify-content: center;
+    height: 33vh;
+    opacity: 1;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
 }
 
 .position_set{
@@ -20,15 +26,15 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px 0 0;
 }
 .row_search_book:hover{
     box-shadow:  0 0 4px #007afe;
 }
 .input_search{
     min-height: 40px;
-    height: 5vh;
-    width: 25vw;
+    height: 5%;
+    width: clamp(100px, 35vw, 500px);
     min-width: 60px;
     border: none;
     outline: none;
@@ -55,7 +61,7 @@
     background: white;
     min-width: 40px;
     font-size:clamp(10px, 1.4vw, 34px);
-    transition: 0.3s;
+    transition: 0.25s;
     cursor: pointer;
     border-radius: 0 6px 6px 0;
 
@@ -91,9 +97,71 @@
 }
 
 .row_h1{
-    font-size: clamp(10px, 3vw, 48px);
+    font-size: clamp(10px, calc((6vw + 4vh)/2), 48px);
     color:white;
 }
 
+.open_search_block{
+    top:32.9vh;
+    z-index: 1;
+    position: sticky;
+    width: 100%;
+    height: 0;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    display: flex;
+    justify-content: center;
+}
 
+.open_search_text_button, .open_button_line, .shadow{
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color:white;
+    background: rgb(86, 156, 238);
+    font-size: calc((4vw + 4vh)/2);
+    align-items: center;
+}
 
+.open_search_text_button{
+    z-index: 2;
+    width: 40%;
+    height: calc((6vw + 8vh)/2);
+    border-radius: 0 0 6vw 6vw;
+}
+
+.open_button_line{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: calc((1vw + 3vh)/2);
+    box-shadow: 0 8px 10px #95b0e1;
+    border-radius: 0 0 6vw 6vw;
+}
+
+.shadow{
+    z-index: 0;
+    position: absolute;
+    width: 40%;
+    height: calc((6vw + 8vh)/2);
+    box-shadow: 0 8px 10px #95b0e1;
+    border-radius: 0 0 6vw 6vw;
+}
+
+#inside_opening{
+    display: none;
+}
+#inside_opening:checked ~ .open_search_block,.open_button_line{
+    top: 0;
+    }
+#inside_opening:checked ~ .search_container{
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    pointer-events:none;
+}

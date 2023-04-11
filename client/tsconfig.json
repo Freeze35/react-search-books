@@ -1,19 +1,7 @@
 {
   "compilerOptions": {
-    //intellisense config for VSCode
-    "paths": {
-      //none-js-ts files is not supported by intellisense. Use 'path-intellisense.mappings' in .vscode/settings.json instead
-      //this is should be sync with aliases in webpack
-      "@/*": [
-        "src/*"
-      ],
-      "images/*": [
-        "src/assets/images/*"
-      ],
-      "fonts/*": [
-        "src/assets/fonts/*"
-      ]
-    },
+    "baseUrl": ".",
+    "compileOnSave": true,
     "jsx": "react-jsx",
     "allowJs": true,
     "exclude": [
