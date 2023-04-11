@@ -15,6 +15,7 @@
 @media screen and (max-width: 500px) {
     .position_set_sort{
         flex-direction: column;
+        margin-bottom: calc((12vh + 10vw)/2);
     }
 }
 .position_set_sort{
