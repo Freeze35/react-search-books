@@ -95,16 +95,16 @@ for better optimaztion ready image use | recommended WEBP format of picture [squ
 />
 ```
 ## webpack
-TerserPlugin => Плагин для для минимазации webpack  
-Dotenv => Оптимизация .env файла (внутренние защищённые переменные лучше для реакт использовать REACT_APP_ вставку для переменных)  
-HtmlWebpackPlugin => упрощает создание файлов HTML для обслуживания ваших пакетов веб-пакетов. Это особенно полезно для пакетов веб-пакетов, которые включают хеш в имени файла, который изменяется при каждой компиляции. Вы можете позволить плагину сгенерировать для вас HTML-файл, предоставить собственный шаблон с помощью шаблонов lodash или использовать собственный загрузчик.  
-CleanWebpackPlugin => По умолчанию этот плагин удалит все файлы внутри output.pathкаталога веб-пакета, а также все неиспользуемые ресурсы веб-пакета после каждой успешной сборки.  
-CompressionPlugin => Подготавливает сжатые версии ресурсов для их обслуживания с помощью Content-Encoding.  
-ImageMinimizerPlugin => Плагин и загрузчик для веб-пакета для оптимизации (сжатия) всех изображений с помощью imagemin  
-InterpolateHtmlPlugin => Плагин для моддифиакции путей загрузки может изменить static на другое имя или получить его из process (Fix for %PUBLIC_URL%%)
-CssMinimizerPlugin => Этот плагин использует cssnano для оптимизации и минимизации вашего CSS.  
-MiniCssExtractPlugin => Этот плагин извлекает CSS в отдельные файлы. Он создает файл CSS для каждого файла JS, который содержит CSS. Он поддерживает загрузку по требованию CSS и SourceMaps.  
-@babel/polyfill("core-js/modules/es.promise", "core-js/modules/es.array.iterator") => [@babel/polyfill dated](https://babeljs.io/docs/babel-plugin-syntax-dynamic-import#working-with-webpack-and-babelpreset-env) Это будет эмулировать полную среду ES2015+ 
+**TerserPlugin** => Плагин для для минимазации webpack  
+**Dotenv** => Оптимизация .env файла (внутренние защищённые переменные лучше для реакт использовать REACT_APP_ вставку для переменных)  
+**HtmlWebpackPlugin** => упрощает создание файлов HTML для обслуживания ваших пакетов веб-пакетов. Это особенно полезно для пакетов веб-пакетов, которые включают хеш в имени файла, который изменяется при каждой компиляции. Вы можете позволить плагину сгенерировать для вас HTML-файл, предоставить собственный шаблон с помощью шаблонов lodash или использовать собственный загрузчик.  
+**CleanWebpackPlugin** => По умолчанию этот плагин удалит все файлы внутри output.pathкаталога веб-пакета, а также все неиспользуемые ресурсы веб-пакета после каждой успешной сборки.  
+**CompressionPlugin** => Подготавливает сжатые версии ресурсов для их обслуживания с помощью Content-Encoding.  
+**ImageMinimizerPlugin** => Плагин и загрузчик для веб-пакета для оптимизации (сжатия) всех изображений с помощью imagemin  
+**InterpolateHtmlPlugin** => Плагин для моддифиакции путей загрузки может изменить static на другое имя или получить его из process (Fix for %PUBLIC_URL%%)
+**CssMinimizerPlugin** => Этот плагин использует cssnano для оптимизации и минимизации вашего CSS.  
+**MiniCssExtractPlugin** => Этот плагин извлекает CSS в отдельные файлы. Он создает файл CSS для каждого файла JS, который содержит CSS. Он поддерживает загрузку по требованию CSS и SourceMaps.  
+**@babel/polyfill("core-js/modules/es.promise", "core-js/modules/es.array.iterator")** => [@babel/polyfill dated](https://babeljs.io/docs/babel-plugin-syntax-dynamic-import#working-with-webpack-and-babelpreset-env) Это будет эмулировать полную среду ES2015+ 
 
 [optimization for webpack](https://medium.com/@steveleung9527/full-guide-webpack-loaders-and-optimization-b04ea7960f36)
 
