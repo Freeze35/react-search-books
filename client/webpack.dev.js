@@ -29,6 +29,18 @@ const frontConfig = {
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
     },
+    devServer: {
+        //host: 'local-ip',
+        //host: '192.168.0.102', // Required for docker
+        //allowedHosts: "all",
+        port: 3000,
+        hot: true,
+        historyApiFallback: true,
+        static: {
+            directory: path.join(__dirname, "dist")
+        },
+        compress: true,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             filename: "./index.html",

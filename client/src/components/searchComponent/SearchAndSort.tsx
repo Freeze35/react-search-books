@@ -52,12 +52,13 @@ const SearchAndSort = observer(() => {
     }
 
     return (
-        <Suspense fallback={<SmallLoader className="search_container"/>}>
+        <Suspense data-testid="dsadaasdsa" fallback={<SmallLoader className="search_container"/>}>
             <input id="inside_opening" type="checkbox"/>
             <div data-testid="search-and-sort" className="search_container">
                 <h1 className="position_set row_h1">Search for Books</h1>
                 <div id="row_search" className="position_set">
                     <input id="input_search" className="position_set input_search"
+                           data-testid="input_search"
                            placeholder={`Поиск..`}
                            value={bookSearchQuery}
                            onChange={setSearchQuery}
