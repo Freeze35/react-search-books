@@ -28,23 +28,4 @@ describe("App", () => {
         expect(bookslist).toMatchSnapshot()
 
     })
-    /*test("Redirect to page", async() => {
-        //send us on page localhost/nopage
-        testHelpers(<App/>)
-
-        const input = screen.getByPlaceholderText(/Поиск/i)
-        const button_search = screen.getByTestId("button-search")
-        //Enter search request
-        const text_test = "flowers"
-        await userEvent.type(input,  `${text_test}`)
-        //Search click
-        await userEvent.click(button_search)
-        const books = await screen.findAllByTestId("book-item")
-        expect(books.length).toBe(10)
-        await userEvent.click(books[0])
-        //expect(books[0]).toBe("dd")
-        //const name_book = await screen.getByTestId("book-page")
-        expect(screen.getByTestId("book-page")).toBeInTheDocument()
-        //expect our books will be first time 10 books by default
-    })*/
 })
