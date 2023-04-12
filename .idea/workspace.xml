@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46ba0204-93f1-4d83-90d6-f5f5c041935d" name="Changes" comment="v1.1.0 =&gt;  add search accordion style change">
-      <change afterPath="$PROJECT_DIR$/client/dist/278.036b673f9ee14997c782.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/327.036b673f9ee14997c782.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/327.036b673f9ee14997c782.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/349.036b673f9ee14997c782.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/663.036b673f9ee14997c782.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/663.036b673f9ee14997c782.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/692.036b673f9ee14997c782.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/692.036b673f9ee14997c782.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/786.036b673f9ee14997c782.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/main.036b673f9ee14997c782.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/dist/main.036b673f9ee14997c782.js.gz" afterDir="false" />
+    <list default="true" id="46ba0204-93f1-4d83-90d6-f5f5c041935d" name="Changes" comment="v1.1.1 =&gt;  add search accordion style change + small fix">
+      <change afterPath="$PROJECT_DIR$/client/dist/278.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/327.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/327.da969ac19b695110b9bd.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/349.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/349.da969ac19b695110b9bd.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/663.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/663.da969ac19b695110b9bd.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/679.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/679.da969ac19b695110b9bd.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/692.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/692.da969ac19b695110b9bd.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/786.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/main.da969ac19b695110b9bd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/main.da969ac19b695110b9bd.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/helpers/closeAfterSubmitSearch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/278.cd4549ac39f43afa4049.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/327.cd4549ac39f43afa4049.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/327.cd4549ac39f43afa4049.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/349.cd4549ac39f43afa4049.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/663.cd4549ac39f43afa4049.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/663.cd4549ac39f43afa4049.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/692.cd4549ac39f43afa4049.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/692.cd4549ac39f43afa4049.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/786.cd4549ac39f43afa4049.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/278.036b673f9ee14997c782.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/327.036b673f9ee14997c782.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/327.036b673f9ee14997c782.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/349.036b673f9ee14997c782.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/663.036b673f9ee14997c782.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/663.036b673f9ee14997c782.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/692.036b673f9ee14997c782.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/692.036b673f9ee14997c782.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/786.036b673f9ee14997c782.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/main.cd4549ac39f43afa4049.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/main.cd4549ac39f43afa4049.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/sortComponent/OptionSelector.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sortComponent/OptionSelector.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/main.036b673f9ee14997c782.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/main.036b673f9ee14997c782.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/BookItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/booksComponent/TakeDataBookComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/booksComponent/TakeDataBookComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BookPage/BookPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/BooksListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/BooksListPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +54,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2O9HycL8Xh7A6WuxujkNg4YGZZ1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,9 +65,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/T/online-store/react-search-books/client/dist",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Kotlin",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -196,7 +216,22 @@
       <option name="project" value="LOCAL" />
       <updated>1681195497929</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v1.1.1 =&gt;  add search accordion style change + small fix">
+      <created>1681196177894</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681196177894</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46ba0204-93f1-4d83-90d6-f5f5c041935d" name="Changes" comment="v1.1.1 =&gt;  add search accordion style change + small fix" />
+      <created>1681290767886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681290767886</updated>
+      <workItem from="1681290771403" duration="1345000" />
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +258,8 @@
     <MESSAGE value="v1.0.8.7 =&gt; eslint configuration(tsconfig) + webpack adding+ postcss.config.js" />
     <MESSAGE value="v1.0.9 =&gt;  webpack configuration for prod + style change + dist folder add for CD" />
     <MESSAGE value="v1.1.0 =&gt;  add search accordion style change" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.1.0 =&gt;  add search accordion style change" />
+    <MESSAGE value="v1.1.1 =&gt;  add search accordion style change + small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1.1 =&gt;  add search accordion style change + small fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

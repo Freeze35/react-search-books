@@ -8,6 +8,7 @@ import {Context} from "../../ContextProvider";
 import {Suspense} from 'react';
 import SmallLoader from '../loaders/SmallLoader';
 import {checkTotalItems} from "../helpers/checkExistsBooks";
+import {closeAfterSubmitSearch} from "../helpers/closeAfterSubmitSearch";
 
 
 const SortComponent = React.lazy(() => import('../sortComponent/SortComponent'));
@@ -24,24 +25,25 @@ const SearchAndSort = observer(() => {
             navigate(`/booklist`)
             fetchBooksFirstTime(bookSearchQuery, booksStore,
                 booksStore.optionRelevance, booksStore.subjectCategory)
-                .then()
+                .then(
+                    ()=>{
+                        closeAfterSubmitSearch()
+                    })
         }
 
     }
 
-
     const setDataEnter =
-        (event: React.KeyboardEvent<HTMLInputElement>, bookSearchQuery: string) =>
+        async (event: React.KeyboardEvent<HTMLInputElement>, bookSearchQuery: string) =>
         {
             if (event.key === "Enter" && bookSearchQuery) {
                 navigate(`/booklist`)
                 fetchBooksFirstTime(booksStore.searchQuery, booksStore,
                     booksStore.optionRelevance, booksStore.subjectCategory)
                     .then(
-                        ()=> {
-                            document.getElementById("open_search_text_button")?.click()
-                        }
-                    )
+                        ()=>{
+                            closeAfterSubmitSearch()
+                        })
             }
         }
 
@@ -70,11 +72,16 @@ const SearchAndSort = observer(() => {
                 <SortComponent/>
             </div>
             {checkTotalItems()
-                ? <div className="open_search_block" id="open_search_block">
-                    <label htmlFor="inside_opening" className="open_search_text_button" id="open_search_text_button">
+                ? <div className="open_search_block" id="open_search_block" >
+                    <label htmlFor="inside_opening"
+                           className="open_search_text_button"
+                           id="open_search_text_button"
+                    >
                         Search
                     </label>
-                    <label htmlFor="inside_opening" className="open_button_line"/>
+                    <label htmlFor="inside_opening"
+                           className="open_button_line"
+                    />
                     <div className="shadow"></div>
                   </div>
                 : ""

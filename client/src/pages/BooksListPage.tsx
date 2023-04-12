@@ -1,5 +1,6 @@
-import SmallLoader from "@/components/loaders/SmallLoader";
+
 import React, { Suspense } from "react";
+import SmallLoader from "../components/loaders/SmallLoader";
 
 const BooksList = React.lazy(() => import('../components/booksComponent/BooksList/BooksList'));
 

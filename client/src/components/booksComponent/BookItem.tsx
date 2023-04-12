@@ -5,6 +5,8 @@ import {fetchOneBook} from "../../api/fetchingApi";
 import BooksStore from "../../store/BooksStore";
 import {TakeDataBookComponent} from "./TakeDataBookComponent";
 import SmallLoader from '../loaders/SmallLoader';
+import {LazyLoadImage} from "react-lazy-load-image-component";
+
 
 interface BookInterface {
     book: any
@@ -27,16 +29,15 @@ const BookItem:React.FC<BookInterface> = ({book,navigate,booksStore}) => {
 
 
     return (
-        <div className="upper_container_books" data-testid="book-item" onClick={()=> {
-            getBookData(book.id,navigate,booksStore)
-        }}>
-            <div className="container_books">
+        <div className="upper_container_books" data-testid="book-item">
+            <div className="container_books" onClick={()=> {
+                getBookData(book.id,navigate,booksStore)
+            }}>
                 <Suspense fallback={<SmallLoader/>}>
-                <img className="book_image"
-                     src={TakeDataBookComponent("imageBook",book)}
-                     alt={""}
-                     loading="lazy"
-                />
+                    <LazyLoadImage className="book_image"
+                        alt={""}
+                        src={TakeDataBookComponent("imageBook",book)} // use normal <img> attributes as props
+                         />
                 </Suspense>
                 <h2 className="text_decoration category">{TakeDataBookComponent("category",book)}</h2>
                 <h1 className="text_decoration name_book"> {TakeDataBookComponent("title",book)}</h1>

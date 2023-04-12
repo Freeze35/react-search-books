@@ -19,9 +19,12 @@
     margin: 8% 0 8%;
     position: relative;
     box-shadow: 4px 0 15px #545454;
-    width: clamp(50px, 45%, 600px);
+    width: clamp(50px, 45%, 800px);
+    height: 60%;
     max-height: 400px;
+    transition: 0.25s;
 }
+
 
 .text_decoration_page {
     position: relative;

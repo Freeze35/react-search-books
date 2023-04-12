@@ -29,7 +29,9 @@
 * react-bootstrap - _стилизуем наше прилложение_ // _styling for app_  
 * mobx: - _создает наше(наши) глобальное хранилище с действиемя и переменнымми_  //  _create our(ours) Store for global action with action and variables_  
 * mobx-react-lite - _дает нам отслеживание изменений глобальных переменных (достаточно небольшой размер пакета)_ // _gives an observer to monitor changes in global variables (package small size for using)_
-
+* @types/react-lazy-load-image-component - Линивая загрузка изображений.
+* react-lazy-load-image-component
+* blurhash - для размытия изображений перед загрукой
 
 Очень рекомендую почитать статьи для Docker сборки и посмотреть видео // I highly recommend reading articles for Docker builds
 [Базовый DockerFile // Basic DockerFile](https://javascript.plainenglish.io/how-to-serve-a-react-app-with-nginx-in-a-non-root-docker-container-cbc4c6acc177)  

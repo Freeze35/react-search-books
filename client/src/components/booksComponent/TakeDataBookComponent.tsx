@@ -19,6 +19,14 @@ export const TakeDataBookComponent = (typeValue: string, book: any) => {
                         : ""
             }
 
+        case "imageBookPage":
+            //image for About Book Page small device
+            return book.volumeInfo?.imageLinks?.thumbnail !== undefined
+                ? book.volumeInfo.imageLinks.thumbnail
+                : book.volumeInfo?.imageLinks?.smallThumbnail !== undefined
+                    ? book.volumeInfo.imageLinks.smallThumbnail
+                    : ""
+
         case "category":
             //check if our category exists and then remove another category separated(split) by regexp "., -"
             // Change word to lower.Making a word that starts with a capital letter
