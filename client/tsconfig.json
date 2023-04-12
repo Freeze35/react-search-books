@@ -6,6 +6,8 @@
     "allowJs": true,
     "exclude": [
       "./src/tests/",
+      ".eslintrc",
+      ".eslintignore"
     ],
     "esModuleInterop": true,
     "strict": true,

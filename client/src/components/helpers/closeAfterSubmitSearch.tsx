@@ -19,5 +19,5 @@ export const closeAfterSubmitSearch =() => {
         }
     };
 
-    let insideInterval = setInterval(retryLoop, delay);
+    const insideInterval = setInterval(retryLoop, delay);
 }
