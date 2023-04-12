@@ -26,7 +26,6 @@ const BookPage = () => {
                     <Suspense fallback={<SmallLoader/>}>
                         <LazyLoadImage
                             className="book_image_page"
-                            style={{zIndex:20}}
                             alt={""}
                             src={TakeDataBookComponent("imageBookPage", booksStore.oneBookData)} // use normal <img> attributes as props
                         />
