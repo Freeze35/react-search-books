@@ -4,7 +4,7 @@ const HtmlWebpackPlugin  =  require ( 'html-webpack-plugin' )
 const Dotenv = require('dotenv-webpack');
 const TerserPlugin = require("terser-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const InterpolateHtmlPlugin = require("interpolate-html-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -23,7 +23,6 @@ const frontConfig = {
         clean: true,
         publicPath: '/'
     },
-
     performance: {
         hints: false,
         maxEntrypointSize: 512000,
@@ -60,8 +59,10 @@ const frontConfig = {
             // optional: it creates gzipped (compressed) files in '[path].gz[query]'
             threshold: filesThreshold, // (bytes). Only assets bigger than this size are processed
         }),
-        new InterpolateHtmlPlugin({
-            PUBLIC_URL: 'static' // can modify `static` to another name or get it from `process`
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: "./src/other"},
+            ]
         })
     ],
     module: {
