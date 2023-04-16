@@ -3,32 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="46ba0204-93f1-4d83-90d6-f5f5c041935d" name="Changes" comment="v1.1.3 =&gt;  tests restrict">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/12b2d907c96df9caf465.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/12b2d907c96df9caf465.svg.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/139f8cb2f1f826d3d46b.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/278.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/327.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/327.7da39fdd76d7097dff1a.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/349.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/349.7da39fdd76d7097dff1a.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/42535d1e2d489e27b525.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/42535d1e2d489e27b525.ttf.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/663.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/663.7da39fdd76d7097dff1a.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/679.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/679.7da39fdd76d7097dff1a.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/692.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/692.7da39fdd76d7097dff1a.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/6e5918a4c0fbd47934a7.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/786.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/_redirects" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/c8a9345ae79813ec05d5.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/de9ced2ccfc8ad55cdbe.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/main.7da39fdd76d7097dff1a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dist/main.7da39fdd76d7097dff1a.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/searchComponent/SearchAndSort.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sortComponent/SortComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681290767886</updated>
       <workItem from="1681290771403" duration="5462000" />
-      <workItem from="1681328503882" duration="22204000" />
+      <workItem from="1681328503882" duration="27219000" />
     </task>
     <task id="LOCAL-00012" summary="v1.1.2 =&gt;  add closer onSearch">
       <created>1681292722581</created>
@@ -272,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681374925587</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="v1.1.3 =&gt;  tests restrict">
+      <created>1681592000035</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1681592000035</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

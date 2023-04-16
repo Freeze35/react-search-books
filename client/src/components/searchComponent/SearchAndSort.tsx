@@ -52,7 +52,7 @@ const SearchAndSort = observer(() => {
     }
 
     return (
-        <Suspense data-testid="dsadaasdsa" fallback={<SmallLoader className="search_container"/>}>
+        <Suspense fallback={<SmallLoader className="search_container"/>}>
             <input id="inside_opening" type="checkbox"/>
             <div data-testid="search-and-sort" className="search_container">
                 <h1 className="position_set row_h1">Search for Books</h1>

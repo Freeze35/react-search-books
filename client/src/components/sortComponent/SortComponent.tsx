@@ -5,7 +5,6 @@ import {observer} from "mobx-react-lite";
 import {fetchBooksFirstTime} from "../../api/fetchingApi";
 import {Context} from "../../ContextProvider";
 import {categoryMassive, optionMassive} from "./optionsMassive";
-import {closeAfterSubmitSearch} from "../helpers/closeAfterSubmitSearch";
 
 const BooksSelector = React.lazy(() => import('../selector/BooksSelector'));
 
@@ -18,7 +17,6 @@ const SortComponent: React.FC<ContainerProps> = observer(() => {
         if (booksStore.searchQuery) {
             booksStore.setOptionRelevance(sortType)
             fetchBooksFirstTime(booksStore.searchQuery, booksStore, sortType, booksStore.subjectCategory).then()
-            closeAfterSubmitSearch()
         } else {
             booksStore.setOptionRelevance(sortType)
         }
@@ -28,7 +26,6 @@ const SortComponent: React.FC<ContainerProps> = observer(() => {
         if (booksStore.searchQuery) {
             booksStore.setSubjectCategory(category)
             fetchBooksFirstTime(booksStore.searchQuery, booksStore, booksStore.optionRelevance, category).then()
-            closeAfterSubmitSearch()
         } else {
             booksStore.setSubjectCategory(category)
         }
